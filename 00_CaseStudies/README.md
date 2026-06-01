@@ -1,0 +1,1 @@
+Case studies on tools, systems, software, etc. Anything that could serve as a case study for further analysis.

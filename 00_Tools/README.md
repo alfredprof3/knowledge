@@ -1,0 +1,1 @@
+Everything about software tools for IT, marketing, and design. Free and open-source software (FOSS)

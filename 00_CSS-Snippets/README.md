@@ -1,0 +1,1 @@
+A collection of CSS Snippets for the Obsidian app downloaded from GitHub. Each document has its own author. Check the **📁 00_HowTo** folder for instructions on how to use it and for more information.
