@@ -5,7 +5,7 @@ Welcome to your automated student tracking ecosystem. This system leverages the�
 
 ---
 
-🛠️ Section 1: System Architecture & Core Logic
+## 🛠️ Section 1: System Architecture & Core Logic
 
 Unlike basic markdown files that store text statically, this ecosystem mimics a professional **Relational Database Management System (RDBMS)**. All your data is stored centrally in a single hidden file at the root of your vault: `Attendance-Rosters.json`.
 
@@ -35,7 +35,7 @@ Unlike basic markdown files that store text statically, this ecosystem mimics a 
 
 ---
 
-📋 Section 2: The Master Tools (Template Scripts)
+## 📋 Section 2: The Master Tools (Template Scripts)
 
 1️⃣ Roster Manager Template (`Roster Manager`)
 
@@ -58,13 +58,15 @@ The administrative heart of your system. Run this template in any blank note or 
 - **🗑️ Delete a Class Database:**
     - _What it does:_ Cleans out old academic courses at the end of a 4-to-6 month cycle to keep menus uncluttered.
 
-🛡️ Integrated Safety Gates (Duplicate Protection)
+🛡️ Integrated Safety Gates & "NA" Bypass Logic
 
-Every time you use the **"Register a completely brand new student"** function, the system runs an automated three-tier verification scan:
+Every time you use the **"Register a completely brand new student"** function, the system runs an automated verification scan to block duplicate **Enrollment IDs** and **Student Names**.
 
-1. **Enrollment ID Check:** If the ID exists, it halts and prompts you to either link the existing profile to this class or overwrite the global entry.
-2. **Name Check:** Flags matching names to prevent duplicate registries while allowing you to bypass if two distinct students share the same name.
-3. **Email Check:** Blocks duplicate communication endpoints.
+For **Email Address Entry**, the system features a smart bypass system:
+
+- **The Problem:** If multiple students lack an email address and you enter placeholders like `"NA"`, the standard duplicate system would halt your entry.
+- **The Fix:** The script looks for specialized **Bypass Labels** (`"na"`, `"n/a"`, `"none"`, `"no email"`, `"not applicable"`).
+- **The Logic:** If your email input matches any of these keywords (regardless of capitalization), the safety scanner **skips the duplication check entirely**, allowing you to save the profile instantly without annoying alert prompts.
 
 ---
 
@@ -88,7 +90,7 @@ Run this template when checking homework, workshops, lab reports, or student pro
 
 ---
 
-📊 Section 3: Live Analytical Dashboards (DataviewJS)
+## 📊 Section 3: Live Analytical Dashboards (DataviewJS)
 
 Place these code blocks inside dedicated notes to turn your static notes into dynamic database queries.
 
@@ -96,7 +98,8 @@ Place these code blocks inside dedicated notes to turn your static notes into dy
 
 Create a note named `Roster Directory`. This acts as a centralized contact hub.
 
-- **How to use it:** Switch to Obsidian's Reading Mode. It renders clean contact sheets grouped by period, complete with clickable `mailto:` links.
+- **How to use it:** Switch to Obsidian's Reading Mode. It renders clean contact sheets grouped by period.
+- **Smart "NA" Formatting:** The code automatically reads student emails. If it detects a bypass label (`"NA"`, `"N/A"`, etc.), it **blocks the generation of a broken hyperlink** and displays the value as clean, italicized plain text (_NA_), making the interface highly polished. Valid emails continue to display as clickable `mailto:` links.
 - **Best Practice:** Press `Ctrl + F` / `Cmd + F` on this page to search for any student name, email fragment, or enrollment ID across all classes instantly.
 
 📅 Dashboard B: Weekly Attendance Summary
@@ -117,7 +120,7 @@ Create a note named `Weekly Activities Summary`. It mirrors the analytics engin
 
 ---
 
-🧠 Section 4: Operational Best Practices
+## 🧠 Section 4: Operational Best Practices
 
 🔄 Forcing Instant Re-loads
 
@@ -142,7 +145,7 @@ To get started, follow these deployment steps:
 2. Bind the `Roster Manager`, `Attendance Tracker`, and `Activity Tracker` templates to customized keyboard hotkeys within **Settings > Hotkeys** (e.g., `Alt + R` for Roster Management).
 3. Create your `Roster Directory`, `Weekly Attendance Summary`, and `Weekly Activities Summary` notes to activate your real-time analytics dashboards.
 
-🎓 Section 5: End-of-Term Final Report Cards (`Generate Final Report Cards`)
+## 🎓 Section 5: End-of-Term Final Report Cards (`Generate Final Report Cards`)
 
 The Report Card engine acts as your automated semester evaluator. Instead of requiring manual calculations at the end of a 4-to-6 month term, this script queries every historical daily note and log entry in your vault to generate comprehensive academic portfolios.
 
@@ -166,14 +169,14 @@ When you trigger the script and select a course, it runs a background scan using
 
 ---
 
-📊 Understanding the Visual Display Layout
+📊 Understanding the Visual Display Layout & "NA" Logic
 
-Each student receives an independent profile card structured with clean metadata blocks and an analytical grid:
+Each student receives an independent profile card structured with clean metadata blocks and an analytical grid. If a student profile contains a missing email placeholder, it prints as neat text (`*NA*`) rather than leaving an empty field:
 
-👤 Student: Alice Smith
+👤 Student: Bob Jones
 
-- **Enrollment ID:** `ID202601`
-- **Email:** alice@university.edu
+- **Enrollment ID:** `ID202604`
+- **Email:** _NA_
 
 📈 Performance Summary
 
@@ -188,7 +191,7 @@ Each student receives an independent profile card structured with clean metadata
 
 🚨 Automatic Status Thresholds
 
-- ✅ : Appears automatically if a student's final rate rests **at or above your strict 70% threshold**.
+- **✅**: Appears automatically if a student's final rate rests **at or above your strict 70% threshold**.
 - **⚠️ CRITICAL / ❌ INCOMPLETE**: Triggers instantly if a student slips **below 70%**, flagging individuals who require remedial support or missed core course milestones.
 
 ---
@@ -200,6 +203,19 @@ Once the template generates your cards and you type out your custom instructor r
 1. Click the **Three Dots Menu (`...`)** in the top-right corner of the active note view.
 2. Select **Export to PDF**.
 3. Obsidian will export a publication-ready document formatting each student profile cleanly for printing, emailing to your dean, or uploading to your official college system.
+
+## 📊 Section 6: Class Performance Dashboard (`Class Performance Dashboard`)
+
+The Class Performance Dashboard serves as a macro-analytical radar for your entire semester workspace. Instead of drilling into individual student records, it aggregates metrics upward to look at classroom trends.
+
+### ⚙️ Analytical Calculations
+1. **Avg Attendance:** Tally-counts every checkbox generated by your Attendance template for that specific course name, dividing overall student presence against total logged seats over the semester.
+2. **Avg Submissions:** Aggregates execution data across every task name registered via the Activity checklist, highlighting the collective submission rate of the course.
+
+### 🚨 Administrative Utility
+* **Classroom Diagnostics:** Ideal for identifying if a particular course group is showing systematic drop-offs in presence or engagement.
+* **Theme-Safe Highlights:** Uses your accessible high-contrast warning logic, automatically color-coding any group average that falls below your target 70% success threshold.
+
 # 📚 System Documentation: Relational Roster Manager
 
 🏗️ Core Concept: The Relational Database
