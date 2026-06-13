@@ -1,4 +1,4 @@
-#alternative #Notion #note-taking #obsidian #Tool 
+#type/tool #topic/note-taking #for/personal 
 
 An alternative to Obsidian and Notion. A note-taking tool with clean and good UI. Notes and knowledge has two section, documents and graphs, a simple path to view notes.
 

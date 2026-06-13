@@ -1,4 +1,4 @@
-#admockup #generator #social #media 
+#type/tool #topic/mockup-generator #for/all
 
 Ad mockup generator in real-time preview. Post look-like.
 

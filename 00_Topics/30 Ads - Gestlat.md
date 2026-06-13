@@ -1,4 +1,4 @@
-#Gestlat #Ads #design #Graphic
+#type/reference #topic/advertising #for/teaching 
 
 An example of how Gestlat principles can be implement in a graphic design poster. This also includes the retoric of figures.
 

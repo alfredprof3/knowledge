@@ -1,4 +1,4 @@
-#sintesis #grafica 
+#type/topic #topic/graphical-summary #for/teaching
 
 Sitio web que habla sobre síntesis gráfica.
 
