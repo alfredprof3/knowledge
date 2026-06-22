@@ -1,4 +1,4 @@
-#SUNBOUNCE #Light #Photography #Filmmake
+
 
 A kind of diffusor screen used for photography and filmmaking productions. Diffuse the light allowing to control the hard-light.
 

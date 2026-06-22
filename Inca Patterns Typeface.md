@@ -1,4 +1,4 @@
-#Inca #Pattern #Typeface #design 
+
 
 Instagram post about how inca culture patterns they transform into an elegant typeface. Must watch!
 

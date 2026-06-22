@@ -1,4 +1,4 @@
-#4U #formula #anyword #Marketing #Copywriting 
+
 
 4U Formula for copywriting. Marketing tool.
 [The 4 Us: A Foolproof Formula to Get Results](https://www.anyword.com/blog/4us-copywriting-formula)

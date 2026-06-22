@@ -1,4 +1,4 @@
-#semiotica #Revista #design 
+
 
 Revista Digital de Diseño Gráfico publicado por Martha Tappan Velázquez, Doctora en Historiografía. Coordinadora Académica. Escuela de Diseño, Universidad Anáhuac México Notre. Marzo - Junio 2013 • Año 2 Número 7 • ISSN:2007-3151
 

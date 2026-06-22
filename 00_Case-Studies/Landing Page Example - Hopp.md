@@ -1,4 +1,4 @@
-#landing #page #Hopp 
+
 
 A clear example of a Landing Page producto. In this case, is a SaaS (Software as a Service) of a link bio tool. Is a kind of alternative to [linktr.ee](https://linktr.ee) or [atom.bio](https://www.atom.bio)
 

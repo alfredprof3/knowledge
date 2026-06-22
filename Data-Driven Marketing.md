@@ -1,4 +1,4 @@
-#data #Driven #Marketing #Decision #Making 
+
 
 Blog post by IBM that explains what is Data-Driven decision making. Used in Marketing.
 

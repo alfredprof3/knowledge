@@ -1,4 +1,4 @@
-#HowTo #Linux #terminal #Password
+
 
 How to enable / disable password feedback in Linux. What is password feedback? The asterisks when we type the password in the terminal, we can show or hidde it.
 

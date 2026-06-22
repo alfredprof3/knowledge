@@ -1,4 +1,4 @@
-#symbols #macOS 
+
 
 You don't know what does some Apple symbols means? This is a list of what does that symbols significate.
 

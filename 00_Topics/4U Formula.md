@@ -1,4 +1,4 @@
-#4U #Marketing #formula #Copywriting
+
 
 4U formula for how and where to use it. Marketing tool for copywriting
 [Fórmula De Las 4U: Qué Es, Dónde Usarla Y Ejemplos](https://unaexperiencia20.com/formula-de-las-4u/)

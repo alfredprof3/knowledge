@@ -1,4 +1,4 @@
-#Focus #DOF #Simulator #Hyperfocal #open-source #Github 
+
 
 Depth of Field simulator can calculate the hyperfocal distance. Github respository. Open-source tool
 

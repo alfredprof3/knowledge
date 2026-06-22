@@ -1,4 +1,4 @@
-#Finanzas #costos #HowTo 
+
 
 Post de TikTok que enseña a cómo calcular los costos variables en productos unitarios usando el ejemplo de los perfumes.
 

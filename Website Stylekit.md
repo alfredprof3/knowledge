@@ -1,4 +1,4 @@
-#color #contrast #cheker
+
 
 [Website Stylekit](https://websitestylekit.com/)
 Website to verify the contrast of color palettes and harmonies

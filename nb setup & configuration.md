@@ -1,1 +1,1 @@
-#nb #setup #Configuration #Git #Github 
+#type/HowTo #topic/nb-configuration #for/personal 

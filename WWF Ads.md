@@ -1,4 +1,4 @@
-#Ads #WWF #ChatGPT #Publicidad 
+
 
 Advertising poster-cartels were created with the help of ChatGPT "_The Hidden Cost_"
 

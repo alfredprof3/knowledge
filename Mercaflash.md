@@ -1,4 +1,4 @@
-#BTL #stand #Print #Impresion 
+
 
 Empresa mexicana que se dedica a la impresión en sublimación, UV, cajas de luz, promocionales, publicidad BTL y más. Gran variedad de productos para impresión.
 

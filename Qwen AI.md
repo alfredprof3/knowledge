@@ -1,4 +1,4 @@
-#AI #Studio #Code #alternative #ChatGPT #Gemini
+
 
 Qwen (or Tongyi Qianwen) is a powerful series of open-source, large language and multimodal models developed by Alibaba Cloud.
 

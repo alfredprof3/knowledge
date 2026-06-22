@@ -1,4 +1,4 @@
-#simbolos #semiotica #significado 
+
 
 Sitio web que explora el mundo de la simbología en general. Desde símbolos simples hasta los más complejos y conspiranoicos.
 

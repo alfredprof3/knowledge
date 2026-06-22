@@ -1,4 +1,4 @@
-#AI #model #generator #images #node-based
+
 
 AI-native creative platform integrated into Figma for generating and editing images, videos, 3D models, and motion graphics using a node-based, visual workflow.
 

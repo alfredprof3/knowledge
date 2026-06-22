@@ -1,4 +1,4 @@
-#anatomia #landing #page #elementos 
+
 
 Anatomía de una landing page según Wix
 

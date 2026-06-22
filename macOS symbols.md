@@ -1,4 +1,4 @@
-#macOS #symbols 
+
 
 ⇧ - Shift key
 ⌘ - Command key

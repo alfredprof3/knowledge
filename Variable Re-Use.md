@@ -1,4 +1,4 @@
-#templater #input #syntax
+
 
 To re-use a variable input from `tp.system.prompt("Variable")` use as shown below
 # Advanced Method (Variable Re-use)

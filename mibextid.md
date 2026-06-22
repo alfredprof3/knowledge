@@ -1,4 +1,4 @@
-#Meta #Analytics #Ads #Tracking
+
 
 You want how Meta knows what you likes? This little piece of code in the URLs can track your move in your smartphone between apps an different programs.
 

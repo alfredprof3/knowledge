@@ -1,4 +1,4 @@
-#jerarquia #visual
+
 
 Post de Instagram (carrousel) explicando la jerarquía visual
 

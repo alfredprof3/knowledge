@@ -1,4 +1,4 @@
-#Git #Configuration 
+
 
 A threat about how to configure Git in Linux and macOS, and handle with the user.
 

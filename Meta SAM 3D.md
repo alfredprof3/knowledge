@@ -1,4 +1,4 @@
-#Meta #SAM #3D #images #generator 
+
 
 Meta SAM 3D is a free, open-source AI system from Meta that converts 2D images into 3D models of objects, people, and scenes.
 

@@ -1,4 +1,4 @@
-#vim #commands #FreeCodeCamp
+
 
 How to use Vimdiff command to compare, resolve and merge conflicts between files.
 

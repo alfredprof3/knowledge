@@ -1,4 +1,4 @@
-#manus #AI #Meta #alternative 
+
 
 Manus AI is an alternative agent AI tool to ChatGPT and so other stuff related with the AI.
 

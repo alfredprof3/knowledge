@@ -1,4 +1,4 @@
-#note-taking #HowTo #setup #Git 
+
 
 Blog post for `nb` note-taking tool on how to set up ssh to sync remotely.
 

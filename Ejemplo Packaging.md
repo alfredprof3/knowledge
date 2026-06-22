@@ -1,4 +1,4 @@
-#Facebook #Packaging #ejemplos 
+
 
 Ejemplo del diseño gráfico aplicado al packaging en una publicación de Facebook.
 

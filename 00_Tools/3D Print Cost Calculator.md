@@ -1,4 +1,4 @@
-#3D #Print #Calculator #Tool #WebApp
+
 
 3D Print Cost Calculator. Upload STL, OBJ or 3DS file and get the instant cost estimates for 3D Printing.
 

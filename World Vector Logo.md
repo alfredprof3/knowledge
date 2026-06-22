@@ -1,4 +1,4 @@
-#SVG #Logo #Vector 
+
 
 Variety of logo brands for famous and non-famous. Alternative [[Svgl]] [[Brandfetch]] [[SVG Logos]]
 

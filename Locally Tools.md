@@ -1,4 +1,4 @@
-#alternative #Geekspreptools #Koolyz #Online #Tool 
+
 
 Alternative to [[Koolyz]] and [[Geeksprep_tools]]. Has an image compressor and more stuff.
 

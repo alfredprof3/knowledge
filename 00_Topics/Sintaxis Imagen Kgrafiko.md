@@ -1,4 +1,4 @@
-#sintaxis #imagen #guia
+
 
 Sitio web que habla sobre la sintaxis de la imagen añadiendo temas de composición, principios del diseño y jerarquía visual.
 

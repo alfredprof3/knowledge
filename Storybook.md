@@ -1,4 +1,4 @@
-#UI #Frontend #Components #testing 
+
 
 Storybook is a frontend kind of framework for build UI components and pages in isolation. This provides the option to test different components without implement them in production.
 

@@ -1,4 +1,4 @@
-#note-taking #Tool #terminal #CLI 
+
 
 `nb` is a high-powered command-line and local web note-taking, bookmarking, and archiving application. It is primarily built as a portable Bash script that manages files in plain-text formats like Markdown, Org-mode, LaTeX, and AsciiDoc.
 

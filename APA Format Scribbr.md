@@ -1,4 +1,4 @@
-#apa #Word #Scribbr 
+
 
 Scribbr blog post about how to set up APA format in Word.
 

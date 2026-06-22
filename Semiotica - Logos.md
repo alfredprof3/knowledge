@@ -1,4 +1,4 @@
-#semiotica #significado
+
 
 Ejemplo de semiótica con logos
 

@@ -1,4 +1,4 @@
-#SEO #Marketing #Gemini #Google 
+
 
 Explicación de Gemini de qué es el SEO.
 

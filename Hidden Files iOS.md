@@ -1,4 +1,4 @@
-#hidden #files #iOS #obsidian 
+
 
 To edit hidden files in Obsidian or any app in iOS (iPhone) first we need a shell (command line interface) tool to access these directories and set up.
 

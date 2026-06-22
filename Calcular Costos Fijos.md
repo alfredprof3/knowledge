@@ -1,4 +1,4 @@
-#costos #Finanzas #HowTo 
+
 
 Post de TikTok sobre cómo calcular los costos fijos por unidad enfocados a un ejemplo de una heladería.
 

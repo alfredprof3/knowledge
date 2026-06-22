@@ -1,4 +1,4 @@
-#Meta #Business #Suite #Configuration
+
 
 I asked Gemini "_The difference between people and partners section in Facebook Business Manager_"
 

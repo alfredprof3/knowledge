@@ -1,4 +1,4 @@
-#SVG #Branding #Logo #UI #UX 
+
 
 Brandfetch is a brand plataform to store and upload your brand identity. Stores more than 50M+ brands. Famous and not famous brands. The website could be a good study case for UI and UX design.
 

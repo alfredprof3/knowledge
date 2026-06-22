@@ -1,4 +1,4 @@
-#images #convert #Compress #XnConvert #alternative 
+
 # Table comparisson
 
 |        Tool        |  UX   |  UI   | Compressor | Website                                                                   |

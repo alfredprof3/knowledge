@@ -1,4 +1,4 @@
-#sintesis #grafica #semiotica 
+
 
 Documento que habla sobre la síntesis gráfica pero el documento se centra más en el signo y significado, es decir, va por el rumbo de la semiótica.
 

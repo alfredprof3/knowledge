@@ -1,4 +1,4 @@
-#macOS #Shortcuts #Hotkeys 
+
 
 Full list of macOS keyboard shortcuts available in Apple machines.
 

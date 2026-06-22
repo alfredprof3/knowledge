@@ -1,4 +1,4 @@
-#Whiteboard #Online #Tool #alternative #TLDRAW 
+
 
 DGM is a whiteboard online tool similar to [[TLDRAW]] that stores files in the cloud. Synchronize is active, **probably the best option if you want your files always in the cloud without downloading the file**. It allows ==_Live Collaboration_==. In Live Collaboration you can preview the files and all stuff inside the workspace.
 

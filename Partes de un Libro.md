@@ -1,4 +1,4 @@
-#Print #Libro #design #Editorial
+
 
 Post de Instagram que menciona las partes de un libro, para su posterior armado y maquetado para el diseño gráfico.
 

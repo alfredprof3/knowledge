@@ -1,4 +1,4 @@
-#Virtual #Machine #alternative #VMware #Parallels
+
 
 Virtualization software free & open source for macOS based on Qemu. Can perform and execute Windows and Linux operation system.
 

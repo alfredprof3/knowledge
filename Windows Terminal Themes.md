@@ -1,4 +1,4 @@
-#colorschemes #Windows #theme 
+
 
 Terminal themes for Windows command line terminal.
 

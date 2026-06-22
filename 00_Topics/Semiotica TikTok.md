@@ -1,4 +1,4 @@
-#semiotica #significado #TikTok
+#type/topic #topic/semiotica-tiktok-allbiter #for/teaching 
 
 Post de TikTok que habla sobre la Semiótica
 

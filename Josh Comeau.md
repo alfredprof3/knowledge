@@ -1,4 +1,4 @@
-#web #developer #inspiration #UI 
+
 
 Website developer with excellent projects, amazing his work!
 [Josh Comeau](https://www.joshwcomeau.com)

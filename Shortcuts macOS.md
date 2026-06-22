@@ -1,4 +1,4 @@
-#HowTo #Shortcuts #Hotkeys #macOS 
+
 
 This post talks about how to create shortcut keyboard for macOS apps.
 

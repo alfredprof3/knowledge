@@ -1,4 +1,4 @@
-#Template #GDrive #Customer #Journey #Map #HubSpot 
+
 
 Plantilla de HubSpot para desarrollar un _Customer Journey Map_.
 

@@ -1,4 +1,4 @@
-#HowTo #setup #easyInsights #Meta #Business #Manager 
+
 
 Step by step guide on how to set up Facebook Business Manager.
 

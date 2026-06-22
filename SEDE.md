@@ -1,4 +1,4 @@
-#Creditos #gob #Mexico #PyMES #QRoo
+
 
 Planes de financiamiento y créditos para apoyar a emprendedores en el estado de Quintana Roo.
 

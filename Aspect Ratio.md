@@ -1,4 +1,4 @@
-#HowTo #Aspect #Ratios #Instagram 
+
 
 Instagram post explaining how aspect ratio works and how the eye tracks elements inside there.
 

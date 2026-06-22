@@ -1,4 +1,4 @@
-#Logo #sintesis #imagen #Trademarks
+
 
 A perfect example of how to use and implement the concept of image synthesis. Less is more complex but meaningful.
 

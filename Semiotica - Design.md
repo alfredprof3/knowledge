@@ -1,4 +1,4 @@
-#semiotica #design #Carlemany
+
 
 Entrada de blog de la _Universitat Carlemany_ explicando la importancia de la semiótica en el diseño gráfico.
 

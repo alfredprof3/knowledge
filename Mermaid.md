@@ -1,4 +1,4 @@
-#Mermaid #cheatsheet #syntax 
+
 
 Documentation about how to use mermaid language that can be used inside Obsidian app. Awesome stuff you can do with it.
 

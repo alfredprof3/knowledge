@@ -1,4 +1,4 @@
-#POS #Point-of-Sale #PyMES 
+
 
 LemonPOS is an open-source, Linux-based point-of-sale (POS) software designed for small-to-medium businesses, utilizing a MySQL database for managing transactions, inventory, and reports.
 

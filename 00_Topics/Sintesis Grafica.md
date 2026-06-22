@@ -1,4 +1,4 @@
-#sintesis #grafica 
+
 
 Excelente documento sobre la síntesis gráfica, explicado con ejemplos.
 

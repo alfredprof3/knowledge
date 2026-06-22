@@ -1,4 +1,4 @@
-#landing #page #Example 
+
 
 Landing page template example about a Fitness program.
 

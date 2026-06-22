@@ -1,4 +1,4 @@
-#Aspect #Ratios #Proportion #Display #Resolution
+
 # How to Scale an Image keeping the Aspect Ratio
 [Source article](https://andrew.hedges.name/experiments/aspect_ratio/)
 ## Formula for finding the Height

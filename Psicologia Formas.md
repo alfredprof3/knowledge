@@ -1,4 +1,4 @@
-#HeJaime #design #psicologia 
+
 
 Entrada de blog explicando la psicología de formas por Hey Jaime!
 

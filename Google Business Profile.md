@@ -1,4 +1,4 @@
-#Account #Google #Business #Profile #setup #Shopify 
+
 
 Blog post explaining how to set up a Google Business Profile.
 

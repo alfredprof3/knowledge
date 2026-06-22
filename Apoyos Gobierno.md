@@ -1,4 +1,4 @@
-#Programa #gob #Mexico #PyMES
+
 
 Entrada de blog de la plataforma de Tienda Nube, anunciando 8 programas del gobierno de México para apoyar a negocios y pequeños comercios.
 

@@ -1,4 +1,4 @@
-#alternative #capcut #video #editor #open-source #Github 
+
 
 Alternative to CapCut. Video editor tool app.
 

@@ -1,4 +1,4 @@
-#NerdFonts #Preview #Tool 
+
 
 If you want to see how some Nerd Fonts looks before to install it, this website app show you how the will look like in the terminal.
 

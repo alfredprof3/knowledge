@@ -1,4 +1,4 @@
-#convert #images #base64
+
 
 To convert images to base64 to avoid inserting them on the vault, use base64 enconding.
 

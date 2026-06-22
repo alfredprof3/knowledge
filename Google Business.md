@@ -1,4 +1,4 @@
-#setup #mailchimp #Google #Business #Account #HowTo 
+
 
 Blog post explaining how to setup a Google Business Account in 6 steps.
 

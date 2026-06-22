@@ -1,4 +1,4 @@
-#landing #page #Example 
+
 
 Landing Page template example by Wix, includes a form from a service. In this case the landing page is offering a real estate service with a form-fill to collect leads.
 

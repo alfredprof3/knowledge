@@ -1,4 +1,4 @@
-#HowTo #setup #Meta #Business #Manager #Gemini 
+ 
 
 Gemini prompt
 

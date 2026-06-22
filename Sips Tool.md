@@ -1,4 +1,4 @@
-#CLI #terminal #macOS #images 
+
 
 Convert, resize and edit images through the command line in macOS.
 

@@ -1,4 +1,4 @@
-#PNAS #Brain #Function #Investigation
+
 
 Investigation about the function of the brain.
 

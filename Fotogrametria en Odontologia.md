@@ -1,4 +1,4 @@
-#Fotogrametria #Photogrammetry #Dentist #Odontologia #3D 
+
 
 Vídeo que explica y muestra cómo se usa la fotogrametría para un modelo 3D de una dentadura y dientes.
 

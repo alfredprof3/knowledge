@@ -1,4 +1,4 @@
-#landing #page #Example
+
 
 A landing page example template from Wix about a coming soon product.
 

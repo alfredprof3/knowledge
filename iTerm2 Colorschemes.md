@@ -1,4 +1,4 @@
-#iTerm2 #colorschemes #macOS 
+
 
 Color schemes for iTerm2 macOS terminal emulator.
 

@@ -1,4 +1,4 @@
-#Tutorial #YouTube #APA #Word 
+
 
 I asked Gemini how to set up APA format in Word.
 

@@ -1,4 +1,4 @@
-#AnswerThePublic #Prompt #Gemini 
+
 
 Prompt que escribieron en lo comentarios de este video, referente a la creación de contenido específicamente sobre; “Esto es lo que hago, cuando no se me ocurre una idea viral para un video”
 

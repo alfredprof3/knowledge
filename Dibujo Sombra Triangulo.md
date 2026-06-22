@@ -1,4 +1,4 @@
-#HowTo #Drawing #Instagram #Shadow
+
 
 Instagram post about how to draw a triangle cast shadow. Very useful.
 

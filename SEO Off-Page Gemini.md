@@ -1,4 +1,4 @@
-#SEO #Off-Page #Marketing #Gemini #Checklist 
+
 
 Acciones fuera de tu web que le indican a Google que tu sitio es una autoridad.
 - **Link Building**: Consigue que otros sitios web de calidad enlacen hacia el tuyo.

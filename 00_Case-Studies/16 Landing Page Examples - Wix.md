@@ -1,4 +1,4 @@
-#landing #page #Example 
+
 
 A collection of 16 examples of Landing pages and design ideas from Wix.
 

@@ -1,4 +1,4 @@
-#psicologia #design #CEI 
+
 
 Entrada de blog del Centro de Estudios de Innovación explicando la psicología de formas.
 

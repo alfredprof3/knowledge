@@ -1,4 +1,4 @@
-#CRM #guia #pipedrive
+
 
 Entrada de blog del sitio web de pipedrive que explica que es un CRM.
 

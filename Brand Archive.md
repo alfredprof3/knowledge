@@ -1,4 +1,4 @@
-#Branding #Application #Logo #Art-Direction
+
 
 Cool website to analyze brands and logos. Alternative to [[Logobook]]
 

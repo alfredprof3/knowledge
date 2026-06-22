@@ -1,4 +1,4 @@
-#Logo #books #symbols #Trademarks 
+
 
 Logobook. Cool logos in black & white. Good achieve.
 

@@ -1,4 +1,4 @@
-#sintaxis #imagen #elementos
+
 
 Sitio web que explica la sintaxis de la imagen de una forma muy completa, entendible y con ejemplos muy buenos aplicados al diseño gráfico.
 

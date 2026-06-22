@@ -1,4 +1,4 @@
-#Meta #Ads #guia 
+
 
 Find the latest Meta ad specifications, formats and placement best practices.
 

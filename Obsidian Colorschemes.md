@@ -1,4 +1,4 @@
-#colorschemes #obsidian #Github 
+
 
 - https://github.com/AnubisNekhet/anuppuccin
 - https://github.com/AmadeusWM/Obsidian-Apatheia

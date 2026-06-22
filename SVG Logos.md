@@ -1,4 +1,4 @@
-#SVG #Logo #Vector #developer 
+
 
 SVG Logos brands to download and implement in programming. For developers. Alternative [[Svgl]] [[Brandfetch]]
 

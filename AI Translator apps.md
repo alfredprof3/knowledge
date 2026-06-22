@@ -1,4 +1,4 @@
-#Real-Time #AI #Apps #Translator
+
 
 List of real-time AI Translator apps.
 1. [JotMe](https://www.jotme.io): Specifically designed for remote teams, it offers real-time translation and transcription across Zoom, Google Meet, and Microsoft Teams. It also generates AI-powered meeting summaries.

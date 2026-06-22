@@ -1,4 +1,4 @@
-#SEM #Marketing #Gemini 
+
 
 Qué es SEM según la respuesta de Gemini.
 

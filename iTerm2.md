@@ -1,4 +1,4 @@
-#shell #terminal #emulator #macOS 
+
 
 Terminal emulator for macOS with highly customization.
 

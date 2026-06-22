@@ -1,4 +1,4 @@
-#INEGI #Tool #PyMES #Mexico 
+
 
 El Directorio Estadístico Nacional de Unidades Económicas (DENUE) es una herramienta del INEGI que ofrece información detallada de millones de negocios activos en México. Incluye ubicación geográfica (mapas), actividad económica, tamaño por personal ocupado y datos de contacto de establecimientos, siendo fundamental para la planeación económica, investigación y análisis de mercado.
 

@@ -1,4 +1,4 @@
-#terminal #emulator #Github 
+
 
 Terminal emulators for Android, iOS, HarmonyOS, Linux, macOS, Windows and much more.
 

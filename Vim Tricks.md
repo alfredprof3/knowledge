@@ -1,4 +1,4 @@
-#vim #Tricks #Guide #Plugin #video #Screencast
+
 
 Vim tricks, how to, and much more about vim. Useful for configurations and tips.
 

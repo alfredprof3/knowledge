@@ -1,4 +1,4 @@
-#Shopify #blog #Meta #Business #Manager #HowTo 
+
 
 Entrada de blog de Shopify de cómo configurar y usar Meta Business Manager.
 

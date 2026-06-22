@@ -1,4 +1,4 @@
-#landing #page #Example 
+
 
 Landing Page template example from Wix about events or conferences. Is a kind of TEDx dynamic.
 

@@ -1,4 +1,4 @@
-#SEO #Google #guia #developer 
+
 
 Guía sobre la explicación del SEO directamente desde el sitio de Google.
 

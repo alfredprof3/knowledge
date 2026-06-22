@@ -1,4 +1,4 @@
-#landing #page #Example 
+
 
 Landing Page example template from Wix about a product. In this case uses a smart watch to track your activity and exercises.
 

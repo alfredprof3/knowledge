@@ -1,4 +1,4 @@
-#Programa #Bienestar #gob #Mexico
+
 
 Programa del Gobierno de México para apoyar a PyMES y jóvenes en la economía de México.
 

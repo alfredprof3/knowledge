@@ -1,4 +1,4 @@
-#Virtual #Machine #alternative #VMware #VirtualBox
+
 
 Parallels Desktop is a software virtualization for macOS who allows execute operation systems like Windows or Linux.
 

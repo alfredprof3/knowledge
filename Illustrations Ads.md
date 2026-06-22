@@ -1,4 +1,4 @@
-#Publicidad #Illustration #Gestlat #Ads 
+
 
 24 illustrations ads examples that use negative space. We can see how Gestlat theory applies well in this posters.
 

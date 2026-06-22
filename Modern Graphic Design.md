@@ -1,4 +1,4 @@
-#Instagram #design #Print #Gutenberg
+
 
 Instagram post to talk about the history of moder graphic design, includes Gutenberg invention of the print press and his evolution.
 

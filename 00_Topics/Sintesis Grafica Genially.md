@@ -1,4 +1,4 @@
-#sintesis #grafica #presentacion #genially
+
 
 En Diseño, la síntesis es aquella composición realizada a partir de sus elementos esenciales, separados en un previo proceso de análisis. **Se refiere al trazo mínimo para crear un significado.**
 

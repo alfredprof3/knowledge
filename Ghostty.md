@@ -1,4 +1,4 @@
-#terminal #emulator #alternative #macOS 
+
 
 A fancy terminal emulator alternative for macOS, with highly customization.
 

@@ -1,4 +1,4 @@
-#vim #Medium #commands 
+
 
 How to use vimdiff to make changes and merge conflicts.
 

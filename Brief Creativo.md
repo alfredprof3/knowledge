@@ -1,4 +1,4 @@
-#Brief #Branding #Marketing 
+
 
 Cómo hacer un Brief creativo de marca y estrategia de marketing.
 

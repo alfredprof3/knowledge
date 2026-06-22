@@ -1,4 +1,4 @@
-#Backup #Tool 
+
 
 Backup tool that acts as an intermediate for backup information. Do not stores your files in their servers. Only connect your service backup with Duplicati and will start to backup and sync.
 

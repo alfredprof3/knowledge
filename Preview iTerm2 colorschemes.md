@@ -1,4 +1,4 @@
-#iTerm2 #macOS #colorschemes 
+
 
 Preview iterm2 color schemes without creating the file and upload it into iterm2 settings.
 

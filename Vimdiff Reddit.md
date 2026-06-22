@@ -1,4 +1,4 @@
-#vim #commands #Reddit
+
 
 How to use Vimdiff command to resolve and merge conflicts.
 

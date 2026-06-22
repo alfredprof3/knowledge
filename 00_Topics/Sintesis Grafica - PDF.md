@@ -1,4 +1,4 @@
-#sintesis #grafica 
+
 
 PDF sobre la síntesis gráfica
 

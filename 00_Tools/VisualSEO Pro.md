@@ -1,4 +1,4 @@
-#Compress #SEO #Marketing #Shopify #Etsy
+
 
 Optimizer online tool, compression images. Can implement SEO and alternate text. Maybe a good tool for images about SEO. Further explore and testing.
 

@@ -1,4 +1,4 @@
-#Bento #Grids #Illustrator #Plugin 
+
 
 Generate clean, structured bento grids inside Illustrator with one click.
 

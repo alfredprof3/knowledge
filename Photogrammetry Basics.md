@@ -1,4 +1,4 @@
-#Photogrammetry #Unreal #Engine #Quixel
+
 
 An article by Quixel explaining what photogrammetry is and how to perform it, using Unreal Engine.
 

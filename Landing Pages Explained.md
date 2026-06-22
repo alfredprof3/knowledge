@@ -1,4 +1,4 @@
-#landing #page #HowTo 
+
 
 This website recollects real landing page implementation to analyze and explain their use cases. From UX and UI to whole process decision making.
 

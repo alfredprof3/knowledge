@@ -1,4 +1,4 @@
-#Estrategia #Marketing #Clientify
+
 
 Entrada de blog del sitio web Clientify que habla sobre estrategias de Marketing.
 

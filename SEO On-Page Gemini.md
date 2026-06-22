@@ -1,4 +1,4 @@
-#SEO #On-Page #Checklist #Marketing #Gemini 
+
 
 Se refiere a todo lo que puedes controlar directamente dentro de tu propia página.
 - **Investigación de Palabras Clave (Keywords)**: Identifica qué términos busca tu audiencia.

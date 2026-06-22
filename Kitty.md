@@ -1,4 +1,4 @@
-#terminal #emulator #macOS 
+
 
 Kitty is a terminal emulator with highly customization in the background.
 

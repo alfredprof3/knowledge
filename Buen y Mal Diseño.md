@@ -1,4 +1,4 @@
-#TikTok #design #elementos 
+
 
 Post de TikTok que habla sobre como se aplica el contraste, la jerarquía visual, el espacio negativo y la paleta de colores, básicamente los elementos básicos del diseño.
 

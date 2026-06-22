@@ -1,4 +1,4 @@
-#NAFIN #gob #Mexico #PyMES #Mipymes 
+
 
 Planes de Financiamiento para pequeñas y medianas empresas, otorgan distintos créditos que pueden acoplarse a las necesidades de cada negocio o comercio.
 

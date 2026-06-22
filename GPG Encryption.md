@@ -1,4 +1,4 @@
-#GPG #encrypt #decrypt #symmetric #asymmetric
+
 
 Explains how to encrypt and decrypt files using GPG. As well, the difference between asymmetric and symmetric method.
 

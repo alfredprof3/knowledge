@@ -1,4 +1,4 @@
-#Google #Perfil #Negocio #Account 
+
 
 Cómo crear una cuenta de _Perfil de Negocio_ para poder ser encontrado en las búsquedas de Google y Maps.
 

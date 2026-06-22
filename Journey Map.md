@@ -1,4 +1,4 @@
-#SEMRUSH #Customer #Journey #Map 
+
 
 Entrada de blog del sitio web SEMRUSH que explica qué es _Customer Journey Map_, sus fases, muestra ejemplos y ofrece una plantilla.
 

@@ -1,4 +1,4 @@
-#Estrategia #Marketing #UniversidadORT
+
 
 Estrategias de Marketing con ejemplos. Marketing tradicional, digital, posicionamiento y de Branding.
 

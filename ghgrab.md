@@ -1,4 +1,4 @@
-#terminal #Tool #Github 
+
 
 You want to download specific files of directories from a Github repository? You can perform that action using this command line tool.
 

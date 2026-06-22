@@ -1,4 +1,4 @@
-#Sublimacion #Impresion #Print #Serigrafia
+
 
 Proveedor de maquinaria e insumos para impresión, cuenta con sublimación, serigrafía y otros métodos de impresión. Maquila de playeras impresas y personalizadas.
 

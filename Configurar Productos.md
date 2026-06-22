@@ -1,4 +1,4 @@
-#tiendanube #blog #GoogleShopping #Facebook #Instagram
+
 
 Conocé la información que necesitás incluir en los productos de tu Tiendanube para enviar el catálago a Google Shopping, Facebook o Instagram.
 *Última actualización: 12/09/2025*

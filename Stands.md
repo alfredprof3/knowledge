@@ -1,4 +1,4 @@
-#stand #design
+
 
 Ejemplo de un diseño de stand 👉🏻 
 https://www.instagram.com/p/DVrVbSyEehs/?igsh=MWFkYTdwMHo0dWc1Nw==
