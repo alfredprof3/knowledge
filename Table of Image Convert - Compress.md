@@ -1,4 +1,4 @@
-
+#type/tool #topic/image-convert-compress #for/all 
 # Table comparisson
 
 |        Tool        |  UX   |  UI   | Compressor | Website                                                                   |

@@ -1,4 +1,4 @@
-
+#type/case-study #topic/landing-page-examples #for/all 
 
 A collection of 16 examples of Landing pages and design ideas from Wix.
 
