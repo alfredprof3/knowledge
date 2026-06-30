@@ -1,4 +1,4 @@
-#tpye/tool #topic/image-to-3D #for/all 
+#type/tool #topic/image-to-3D #for/all 
 
 | Tool                            | URL                                                       |   Review   |
 | ------------------------------- | --------------------------------------------------------- | :--------: |

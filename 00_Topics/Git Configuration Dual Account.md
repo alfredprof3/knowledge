@@ -1,11 +1,13 @@
 #type/topic #topic/git-configuration #for/all 
 
-> [!author] Prompt
+> [!human] You
 > how to configure git only for one user in macos
 
-> [!author] Gemini
+> [!ai] Gemini
 > To configure Git for a single user on macOS so that every repository you work on uses the same identity, you should ==set your configuration at the **global** level==. This stores your details in a `.gitconfig` file located in your home directory (`~/.gitconfig`), which Git applies to all your projects.
+> 
 > # Step-by-Step Configuration
+> 
 > 1. **Open Terminal**  
 >     You can find Terminal in your **Applications > Utilities** folder or by searching with Spotlight (Cmd + Space).
 > 2. **Set Your Username**  
@@ -17,13 +19,20 @@
 > 4. **Verify the Settings**  
 >     To confirm your information was saved correctly, use:  
 >     `git config --global --list`
+> 
 > # Managing Multiple Users (Advanced)
+> 
 > If you need to use different identities for specific projects (e.g., a personal email for one folder and a work email for another), you have two main options:
 > 
 > - **Repository-Specific (Local):** Navigate into a specific project folder and run the commands _without_ the `--global` flag. This overrides your global settings only for that one repository.
 >     - `git config user.name "Specific Name"`
 >     - `git config user.email "specific_email@example.com"`
-> - **Conditional Includes:** You can automate this by editing your global `~/.gitconfig` to include separate config files based on the directory path
+> - **Conditional Includes:** You can automate this by editing your global `~/.gitconfig` to include separate config files based on the directory path.
+
+
+
+
+
 
 ---
 

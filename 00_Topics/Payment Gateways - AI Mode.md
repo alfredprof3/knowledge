@@ -48,7 +48,7 @@
 
 ---
 
-I> [!author] Prompt
+> [!author] Prompt
 > ’m currently setting up my online shop in Mexico. I sell second-hand goods, such as electronic devices, keyboards, chargers, laptop sleeves and the like. I’m using WordPress, so that means I’m building the site from scratch. As for payment methods, I’d like to know what the best options are for ensuring the transaction is carried out entirely online. Please tell me what your best options are, keeping in mind that there should be no errors and that the experience should be smooth and satisfying.
 
 > [!author] AI Mode by Google
