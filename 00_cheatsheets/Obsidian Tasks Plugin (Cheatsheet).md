@@ -1,6 +1,5 @@
 #type/cheatsheet #topic/tasks-plugin #for/personal 
-
-Insert tasks plugin code
+# Insert tasks plugin code
 ````
 ```tasks
 not done

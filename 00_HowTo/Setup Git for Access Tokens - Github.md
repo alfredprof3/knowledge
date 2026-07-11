@@ -1,11 +1,11 @@
 #type/HowTo #topic/setup-access-tokens #for/personal 
 
-> [!author] Prompt
-> When I work on my 2020 M1 MacBook Air with Git in general and with other tools like nb.sh (a command-line tool for taking notes), a pop-up window appears asking for my token. I've set up my GitHub account to generate personal access tokens (PATs) that are valid for 30 days.
-> It's a good solution, since it saves me from having to manually enter my PAT in the Git configuration repository. However, when I work on my Linux computer, or on my Android device using the Termux emulator, I have to manually change my PAT in the Git configuration folder.
+> [!human] You
+> When I work on my 2020 M1 MacBook Air with Git in general and with other tools like nb.sh (a command-line tool for taking notes), a pop-up window appears asking for my token. I've set up my GitHub account to generate personal access tokens (PATs) that are valid for 30 days.  
+> It's a good solution, since it saves me from having to manually enter my PAT in the Git configuration repository. However, when I work on my Linux computer, or on my Android device using the Termux emulator, I have to manually change my PAT in the Git configuration folder.  
 > How can I fix this and follow the same workflow I have set up on my Mac? Note that on my Mac, every time my PAT expires, a GitHub pop-up window appears. I want to follow the same workflow on my Linux computer and my Android device; I want a pop-up window to appear asking for my updated PAT.
 
-> [!author] Gemini
+> [!ai] Gemini
 > Jumping between your M1 Mac, your Linux machine, and Termux can definitely cause some friction when the credential handling doesn't match up. The reason your Mac gives you that seamless pop-up is because macOS has a built-in credential helper (`osxkeychain`) that hooks directly into the operating system's native keychain.
 > 
 > Out of the box, Linux and Termux don't have a universal keychain helper configured, so Git defaults to failing or forcing you to manually update your `.gitconfig` or `.git-credentials` files.
@@ -23,6 +23,7 @@
 > 2. **Configure Git to use it:** Once installed, run the following command in your terminal:
 >     
 >     Bash
+>     
 >     ```
 >     git-credential-manager configure
 >     ```
@@ -56,13 +57,13 @@
 >     
 > 6. **Follow the interactive prompts:**
 >     
->     - **What account do you want to log into?** GitHub.com
+>     - **What account do you want to log into?** GitHub.com  
 >         
->     - **What is your preferred protocol for Git operations?** HTTPS
+>     - **What is your preferred protocol for Git operations?** HTTPS  
 >         
->     - **Authenticate Git with your GitHub credentials?** Yes _(This is the crucial step that sets up the credential helper)_
+>     - **Authenticate Git with your GitHub credentials?** Yes _(This is the crucial step that sets up the credential helper)_  
 >         
->     - **How would you like to authenticate?** You can choose "Paste an authentication token" to paste your PAT.
+>     - **How would you like to authenticate?** You can choose "Paste an authentication token" to paste your PAT.  
 >         
 > 
 > **The Workflow:** When your PAT expires after 30 days and Git access is denied, you simply run `gh auth login` again. It will ask for your new PAT right in the terminal, automatically update the credentials, and your `nb.sh` syncs will work immediately.
@@ -77,22 +78,22 @@
 > git config --global credential.helper
 > ```
 > 
-> - **On Mac:** It should say `osxkeychain`.
+> - **On Mac:** It should say `osxkeychain`.  
 >     
-> - **On Linux (after setup):** It should point to the GCM executable.
+> - **On Linux (after setup):** It should point to the GCM executable.  
 >     
-> - **On Termux (after setup):** It should point to the GitHub CLI auth module.
+> - **On Termux (after setup):** It should point to the GitHub CLI auth module.  
 >     
 > 
 > Setting these up will completely eliminate the need to manually dig into your Git configuration folders every month.
 
 ---
 
-> [!author] Prompt
-> Thank you so much! I followed your instructions and was able to install the GitHub CLI on my Android smartphone. The only problem is that when I run the command “git config --global credential.helper,” I get the following message: /data/data/com.termux/files/usr/bin/git-credential-manager. 
+> [!human] You
+> Thank you so much! I followed your instructions and was able to install the GitHub CLI on my Android smartphone. The only problem is that when I run the command “git config --global credential.helper,” I get the following message: /data/data/com.termux/files/usr/bin/git-credential-manager.   
 > I think it points to a different credential manager. How can I configure the GitHub CLI to point to that path?
 
-> [!author] Gemini
+> [!ai] Gemini
 > That is great progress! Getting a terminal environment set up on a phone is half the battle.
 > 
 > To clear up a slight misconception: we actually don't want to configure the GitHub CLI to point to that path. Instead, we need to do the exact opposite. We need to tell **Git** to forget about that old path and point to the **GitHub CLI**instead.

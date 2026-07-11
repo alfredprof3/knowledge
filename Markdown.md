@@ -119,9 +119,9 @@ Test for video embedding in markdown file but written with vimwiki
 >>Text goes here
 >```
 
->[!check]- succes
+>[!check]- Check
 >``` 
->>[!check] succes
+>>[!check] Check
 >>Text goes here
 >```
 
