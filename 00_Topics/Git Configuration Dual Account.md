@@ -29,17 +29,12 @@
 >     - `git config user.email "specific_email@example.com"`
 > - **Conditional Includes:** You can automate this by editing your global `~/.gitconfig` to include separate config files based on the directory path.
 
-
-
-
-
-
 ---
 
-> [!author] Prompt
+> [!human] You
 > Thanks, helpful information. I'm a noob user, learning Git and Github stuff. I saw a couple of tutorial in YouTube and they say to configure Git via the command you told me. But reading further, I realize that not only exists the `--global` flag. I want to know, what is the difference between global, local and system flags? Explain me, and give me examples to allow me to understand where and how to use this options for my workflow.
 
-> [!author] Gemini
+> [!ai] AI Mode by Google
 > Git saves your settings in three different levels of configuration files. The difference between **local**, **global**, and **system** comes down to **scope**: which repositories and which users on your Mac are affected by the changes.
 > 
 > Here is the breakdown of how they work, ranked from the most specific to the most general.
@@ -137,10 +132,10 @@
 
 ---
 
-> [!author] Prompt
+> [!human] You
 > Oh thank you very much; the information is much clearer and easier to understand now. Yes, I want to plan to use separate Github accounts for my work and personal projects. I'm currently planning to use Neovim for my code editor, do you think it's a good idea to use that code editor?
 
-> [!author] Gemini
+> [!ai] AI Mode by Google
 > **Yes, Neovim is an excellent code editor**, but it comes with a steep learning curve because it is entirely keyboard-driven and terminal-based. Since you are just starting with Git and GitHub, using Neovim will require you to learn text editing shortcuts at the same time you are learning coding and version control.
 > 
 > Many beginners love it because it is incredibly fast, lightweight, and teaches you to navigate code without a mouse. If you enjoy customizing your tools, it is a great choice; if you want something that "just works" out of the box, a graphical editor like Visual Studio Code might feel less overwhelming at first.
@@ -284,10 +279,10 @@
 
 ---
 
-> [!author] Prompt
+> [!human] You
 > Ok helpful information, I'm going to test it and I would let you name if it works, but for now I have a doubt. If I using and switching from Mac to Linux (Debian) How the workflow and configuration needs to be? Is the same step or they involve different process? Please, guide me through this extra workflow. In my daily I work on both, Linux and macOS. I want to set up these things to avoid struggling and get a messy with my personal and work account.Once we've sorted all this out, we'll get back to the part where I need to set up my Github accounts using Github Access Tokens. Or let me know what would you recommend me to use to secure my credentials, just for your know, I have been using Github's PAT configuration with Pass Standar Unix manager and Git Credential Manager.
 
-> [!author] Gemini
+> [!ai] AI Mode by Google
 > 🐧 Cross-Platform Compatibility: macOS vs. Linux (Debian)
 > 
 > Good news: **The workflow and configuration steps are exactly identical.**
@@ -297,6 +292,7 @@
 > Minor Adjustments to Watch Out For:
 > 
 > 1. **The Home Directory Symbol (`~`):** On macOS, your home directory expands to `/Users/username/`. On Debian, it expands to `/home/username/`. Git natively understands the `~` shortcut, so as long as you use `~/Projects/...` in your configuration files, the paths will translate automatically across both systems.
+>     
 > 2. **Neovim Installation:** Neovim is built into macOS via Homebrew (`brew install neovim`), but on Debian, you will want to install it using the advanced packaging tool:
 >     
 >     bash
@@ -408,25 +404,21 @@
 > 
 > Instead of copying the normal SSH link from GitHub (`git@github.com:username/repo.git`), you will change `github.com`to match the specific alias you created.
 > 
-> - **For a Personal Repo (inside `~/Projects/personal/`):**
->     
->     bash
+> - **For a Personal Repo (inside `~/Projects/personal/`):** bash
 >     
 >     ```
 >     git clone git@github.com-personal:your-personal-username/your-repo.git
 >     ```
 >     
->     Use code with caution.
+>     Use code with caution.  
 >     
-> - **For a Work Repo (inside `~/Projects/work/`):**
->     
->     bash
+> - **For a Work Repo (inside `~/Projects/work/`):** bash
 >     
 >     ```
 >     git clone git@github.com-work:your-work-organization/work-repo.git
 >     ```
 >     
->     Use code with caution.
+>     Use code with caution.  
 >     
 > 
 > Once cloned, your folder layout will automatically control your Git name/email, and your SSH alias will automatically control your login security—leaving you with zero credential conflicts on both macOS and Linux!
@@ -435,14 +427,14 @@
 > 
 > If you prefer to stick strictly with your current setup, let me know:
 > 
-> - Do you want to try setting up **SSH** first, or do you want to proceed with configuring **Git Credential Manager and Pass** to handle the PATs across both OS environments?
+> Do you want to try setting up **SSH** first, or do you want to proceed with configuring **Git Credential Manager and Pass** to handle the PATs across both OS environments?
 
 ---
 
-> [!author] Prompt
+> [!human] You
 > Ok thank you, I take notes and I will implement this steps. Since you recommend me using SSH keys to handle the authentication I want to know and learn also how to set up using Github CLI (gh) tool to log in and as well how to set up using Git Credential Manager and Pass to handle the PATs across both OS environments. Here is my goal, learn with:1. SSH Keys (you already explain to me)2. Github CLI3. Github Access Token (PAT)
 
-> [!author] Gemini
+> [!ai] AI Mode by Google
 > It is incredibly smart to learn all three methods. Understanding SSH, the GitHub CLI, and Git Credential Manager (GCM) gives you total flexibility, no matter what environment you find yourself working in.
 > 
 > Here is how to set up **GitHub CLI** and **PATs with GCM + Pass** for a dual-account, cross-platform workflow on macOS and Debian.
@@ -572,28 +564,20 @@
 > 
 > When you clone a repository via HTTPS, you **must manually insert your specific GitHub username** into the URL.
 > 
-> - **For Personal (Your personal username is `dev-personal`):**
->     
->     bash
+> - **For Personal (Your personal username is `dev-personal`):** bash
 >     
 >     ```
 >     git clone https://dev-personal@://github.com
 >     ```
 >     
->     Use code with caution.
->     
->     _GCM will pop up and ask for your password. Paste your **Personal PAT** here._
-> - **For Work (Your work username is `dev-work`):**
->     
->     bash
+>     Use code with caution. _GCM will pop up and ask for your password. Paste your **Personal PAT** here._
+> - **For Work (Your work username is `dev-work`):** bash
 >     
 >     ```
 >     git clone https://dev-work@://github.com
 >     ```
 >     
->     Use code with caution.
->     
->     _GCM will pop up again, recognizing this as a completely different user. Paste your **Work PAT** here._
+>     Use code with caution. _GCM will pop up again, recognizing this as a completely different user. Paste your **Work PAT** here._
 > 
 > Because of `useHttpPath`, GCM will store `dev-personal` and `dev-work` as separate entries inside your Mac Keychain and your Debian `pass` manager without overwriting each other.
 > 
@@ -605,10 +589,10 @@
 
 ---
 
-> [!author] Prompt
+> [!human] You
 > I was thinking you could start by showing me how to set it up through Github CLI (gh) including a step-by-step to avoid mistakes and errors, if so I would let you know in which step I struggle, please start with Github CLI with every single detail you think I should know. Remember that the set up needs to be functional using macOS and Linux Debian operation systems.
 
-> [!author] Gemini
+> [!ai] AI Mode by Google
 > Master Guide: Dual-Account GitHub CLI (`gh`) Setup for macOS & Debian
 > 
 > This setup isolates your configuration files into separate directories. It allows you to switch your terminal's context instantly, preventing authentication errors across both operating systems.
@@ -619,25 +603,21 @@
 > 
 > Open your terminal and install the CLI based on the OS you are currently using.
 > 
-> - **On macOS:**
->     
->     bash
+> - **On macOS:** bash
 >     
 >     ```
 >     brew install gh
 >     ```
 >     
->     Use code with caution.
+>     Use code with caution.  
 >     
-> - **On Linux (Debian):**
->     
->     bash
+> - **On Linux (Debian):** bash
 >     
 >     ```
 >     sudo apt update && sudo apt install gh -y
 >     ```
 >     
->     Use code with caution.
+>     Use code with caution.  
 >     
 > 
 > ---
@@ -673,11 +653,13 @@
 >     Use code with caution.
 >     
 > 2. **Interactive Prompts (Select exactly these options):**
+>     
 >     - _What account do you want to log into?_ → **GitHub.com**
 >     - _What is your preferred protocol for Git operations on this host?_ → **HTTPS**
 >     - _Authenticate Git with your GitHub credentials?_ → **Yes**
 >     - _How would you like to authenticate GitHub CLI?_ → **Login with a web browser**
 > 3. **The Browser Step:**
+>     
 >     - The terminal will give you an 8-character **one-time code** (e.g., `XXXX-XXXX`).
 >     - Press **Enter** to automatically open your default browser.
 >     - Make sure you are logged into your **Personal** GitHub account in that browser.
@@ -700,6 +682,7 @@
 >     Use code with caution.
 >     
 >     _(Note: This flag only stays active in your current terminal window. If you close the window, it resets)._
+>     
 > 5. Run the login command again:
 >     
 >     bash
@@ -711,11 +694,13 @@
 >     Use code with caution.
 >     
 > 6. **Interactive Prompts (Select exactly these options):**
+>     
 >     - _What account do you want to log into?_ → **GitHub.com**
 >     - _What is your preferred protocol for Git operations on this host?_ → **HTTPS**
 >     - _Authenticate Git with your GitHub credentials?_ → **Yes**
 >     - _How would you like to authenticate GitHub CLI?_ → **Login with a web browser**
 > 7. **The Browser Step:**
+>     
 >     - **Crucial:** Before entering the new code, go to github.com in your browser, **log out of your personal account**, and **log into your work account**.
 >     - Copy the new 8-character code from your terminal.
 >     - Paste it into the browser and click **Authorize github**.
@@ -728,25 +713,21 @@
 > 
 > 8. Open your Shell Profile in Neovim
 > 
-> - **On macOS** (Default shell is Zsh):
->     
->     bash
+> - **On macOS** (Default shell is Zsh): bash
 >     
 >     ```
 >     nvim ~/.zshrc
 >     ```
 >     
->     Use code with caution.
+>     Use code with caution.  
 >     
-> - **On Debian** (Default shell is usually Bash):
->     
->     bash
+> - **On Debian** (Default shell is usually Bash): bash
 >     
 >     ```
 >     nvim ~/.bashrc
 >     ```
 >     
->     Use code with caution.
+>     Use code with caution.  
 >     
 > 
 > 2. Add the Code
@@ -827,9 +808,7 @@
 > 
 > When cloning repositories using the GitHub CLI, you no longer need to worry about manually altering URLs. The CLI handles everything natively based on your active account flag.
 > 
-> - **To work on a Personal repo:**
->     
->     bash
+> - **To work on a Personal repo:** bash
 >     
 >     ```
 >     cd ~/Projects/personal/
@@ -837,11 +816,9 @@
 >     gh repo clone username/repo-name
 >     ```
 >     
->     Use code with caution.
+>     Use code with caution.  
 >     
-> - **To work on a Work repo:**
->     
->     bash
+> - **To work on a Work repo:** bash
 >     
 >     ```
 >     cd ~/Projects/work/
@@ -849,7 +826,7 @@
 >     gh repo clone organization/repo-name
 >     ```
 >     
->     Use code with caution.
+>     Use code with caution.  
 >     
 > 
 > Please attempt these configuration steps on either your Mac or Debian machine. Let me know **which step number you are currently on**, or if you hit any unexpected terminal outputs along the way!
