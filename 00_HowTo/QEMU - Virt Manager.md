@@ -82,3 +82,15 @@ To store your Virtual Machines (VMs) create the `VM` folder.
 ```bash
 mkdir -p /home/$USER/VM
 ```
+# Download the ISO file
+To download via command line in the terminal, you can use `wget` or `curl`
+
+- Download ISO using `wget`
+```bash
+wget https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-13.6.0-amd64-netinst.iso
+```
+
+- Downloads ISO using `curl`
+```bash
+curl https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-13.6.0-amd64-netinst.iso
+```
