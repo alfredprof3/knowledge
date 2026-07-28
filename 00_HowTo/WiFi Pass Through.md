@@ -35,3 +35,33 @@ Depending on what you plan to do inside the virtual machine, keep these chipset 
 - **Drivers**: This chip is **not** natively supported by the Linux kernel.
 - **Action Required**: If your guest VM is Linux, you will need to manually install the `rtl8812au` DKMS drivers inside the virtual machine before the OS can see any Wi-Fi networks.
 - **USB 3.0 controller**: Becuase this is a high-speed 802.11ac card, ensure your VM has a **USB 3.0 (xHCI)** controller added to its virtual hardware layout in Virt-Manager, otherwise, your speeds will be severely throttled.
+
+_Note: If you boot the VM while the Alfa card is unplugged, the VM will still start normally, but it will print a warning in the logs. Once you plug the card back into the host, you will have to manually attarch it for that session via the **Virtual Machine > Redirect USB device** menu._
+# 🛠️ Critical Optimizations for Wireless Auditing (Pentesting)
+Since you are setting up a wireless hacking lab, you need to configure two specific settings in Virt-Manager to avoid packets drops or driver crashes during injection.
+## 1. Upgrade the Virtual USB Controller to USB 3.0
+By default, Virt-Manager might assign an older USB 2.0 controller to the VM. While the Atheros card will handle this fine, the **Realtek 8812AU** will bottleneck, drop connections or fail to switch into monitor mode.
+- In the VM hardware details 💡 click on **Controller USB**.
+- Change the **Model** drop-down menu to **USB 3.0 (eXtensible Host Controller Interface - xHCI)**.
+- Click **Apply**.
+## 2. Blacklist the Alfa Drivers on the Debian Host (Highly Recommended)
+If your Debian host operating system tries to claim the Alfa card at the exact time the VM tries to boot, a race condition occurs. This can cause the VM boot to freeze, or cause the card to fail when switching to monitor mode (`airmon-ng start`).
+To prevent the host from touching the cards, blacklist their drivers on you Debian host:
+> [!steps]
+> 1. Open a terminal on your **Debian Host** (not the VM).
+> 2. Create a wireless lab blacklist file:
+> 	```bash
+> 	sudo nvim /etc/modprobe.d/wireless-lab-blacklist.conf
+> 	```
+> 3. Add the kernel modules for both chips to the file:
+> 	```bash
+> 	# Blacklist Atheros AR9271 on host
+> 	blacklist ath9k_htc
+> 	
+> 	# Blacklist Realtek RTL8812AU on host
+> 	blakclist rtl8812au
+> 	blacklist 8812au
+> 	```
+> 4. Save and exit (`:x`)
+
+Now, your Debian host will completely ignore the cards when plugged in, leaving them perfectly clean and isolated for QEMU to claim immediately upon boot.

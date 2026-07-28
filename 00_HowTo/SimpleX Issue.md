@@ -1,6 +1,6 @@
 #type/HowTo #topic/simplex-issue #for/personal 
 
-> [!author] Prompt
+> [!human] You
 > I installed `simplex-chat` command line tool to send messages via terminal but I'm having an issue. The message prompt says
 > 
 > ```
@@ -12,10 +12,8 @@
 > 
 > How can I fix it? I give you the repository where I installed the tool https://github.com/simplex-chat/simplex-chat/blob/stable/docs/CLI.md#usage
 
-> [!author] Claude
+> [!ai] Claude
 > Let me fetch the simplex-chat CLI docs to give you accurate guidance.Important note first: this error is happening on **macOS** (not iSH on iPad), since the path shows `/Users/alfredxuser/` — a Mac home directory. The binary was compiled expecting OpenSSL 3.0 at `/usr/local/opt/openssl@3.0/` but that path doesn't exist on your system. Here's how to fix it:
-> 
-> ---
 > 
 > ## Fixing the `libcrypto.3.dylib` Error on macOS
 > 
@@ -31,15 +29,11 @@
 > /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 > ```
 > 
-> ---
-> 
 > ### Step 2 — Install OpenSSL 3 via Homebrew
 > 
 > ```sh
-> brew install openssl@3
+> brew install openssl@3.0
 > ```
-> 
-> ---
 > 
 > ### Step 3 — Find where Homebrew installed it
 > 
@@ -50,8 +44,6 @@
 > ls /usr/local/opt/openssl@3/lib/      # Intel Mac
 > ls /opt/homebrew/opt/openssl@3/lib/   # Apple Silicon (M1/M2/M3)
 > ```
-> 
-> ---
 > 
 > ### Step 4 — Create the symlink the binary expects
 > 
@@ -77,15 +69,11 @@
 >     /usr/local/opt/openssl@3.0/lib/libssl.3.dylib
 > ```
 > 
-> ---
-> 
 > ### Step 5 — Test it
 > 
 > ```sh
 > simplex-chat --version
 > ```
-> 
-> ---
 > 
 > ### Step 6 — If it still fails, use `install_name_tool`
 > 
@@ -108,8 +96,6 @@
 > simplex-chat --version
 > ```
 > 
-> ---
-> 
 > ### Step 7 — Allow Gatekeeper (macOS security)
 > 
 > Since `simplex-chat` is a downloaded binary, macOS may block it. Run:
@@ -117,8 +103,6 @@
 > ```sh
 > xattr -d com.apple.quarantine ~/.local/bin/simplex-chat
 > ```
-> 
-> ---
 > 
 > ### Quick Summary
 > 
@@ -132,7 +116,7 @@
 
 ---
 
-> [!author] Prompt
+> [!human] You
 > I'm using a macbook air M1 2020 with a zsh shell. I do it the previous steps but a second message shows up
 > 
 > ```
@@ -144,14 +128,12 @@
 > 
 > How do I fix it?
 
-> [!author] Claude
+> [!ai] Claude
 > The new error tells us exactly what's wrong — look at this key part:
 > 
 > > `have 'arm64', need 'x86_64'`
 > 
 > You downloaded the **Intel (x86_64)** binary, but your M1 Mac needs the **aarch64 (Apple Silicon)** binary. No amount of OpenSSL symlinking will fix an architecture mismatch — you just need the right binary. Here's how to fix it:
-> 
-> ---
 > 
 > ## Fix: Download the Correct arm64 Binary
 > 
@@ -169,8 +151,6 @@
 > 
 > This should automatically grab `simplex-chat-macos-aarch64` for your M1.
 > 
-> ---
-> 
 > ### Option 2 — Manually download the aarch64 binary
 > 
 > ```sh
@@ -185,8 +165,6 @@
 > chmod +x ~/.local/bin/simplex-chat
 > ```
 > 
-> ---
-> 
 > ### Step 2 — Remove the Gatekeeper quarantine flag
 > 
 > macOS will block any downloaded binary. Run this after installing:
@@ -195,15 +173,11 @@
 > xattr -d com.apple.quarantine ~/.local/bin/simplex-chat
 > ```
 > 
-> ---
-> 
 > ### Step 3 — Verify it works
 > 
 > ```sh
 > simplex-chat --version
 > ```
-> 
-> ---
 > 
 > ### Step 4 — Confirm the architecture is now correct
 > 
@@ -216,8 +190,6 @@
 > ```
 > simplex-chat: Mach-O 64-bit executable arm64
 > ```
-> 
-> ---
 > 
 > ### Why did this happen?
 > 
