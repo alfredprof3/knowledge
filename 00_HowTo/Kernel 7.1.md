@@ -1,4 +1,4 @@
-#type/HowTo/Debian #topic/Install/Kernel-7-1 #for/Debian
+#type/HowTo/Install #topic/Linux/Kernel-7-1 #for/Debian
 
 I follow the step-by-step to downloading, compiling and installing the Linux Kernel 7.1 in a virtual Debian machine in BIOS mode.
 

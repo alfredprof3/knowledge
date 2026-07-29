@@ -1,4 +1,4 @@
-#type/HowTo #topic/secure-boot-debian13 #for/all 
+#type/HowTo #topic/LastDragon/Debian/secure-boot #for/all 
 
 Secure Boot on Debian 13 using MOK by LastDragon channel.
 

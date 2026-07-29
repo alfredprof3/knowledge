@@ -1,4 +1,4 @@
-#type/HowTo #topic/ifupdown-wpasupplicant #for/all 
+#type/HowTo #topic/Debian/WiFi/ifupdown-wpasupplicant #for/all 
 
 These instructions require and make use of ifupdown, iproute2, wpasupplicant (For WPA2 support), iw and wireless-tools. Ensure you have al of these installed before continuing. You also might be interested in the instructions below that only use ifupdown and wpasupplicant, along with using a more advanced configuration.
 

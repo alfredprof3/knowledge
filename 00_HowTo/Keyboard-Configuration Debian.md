@@ -1,4 +1,4 @@
-#type/HowTo #topic/dpkg-reconfigure/keyboard-configuration #for/all 
+#type/HowTo/Configure #topic/Keyboard/dpkg-reconfigure/localectl-set-keymap #for/all 
 
 Alternative to reconfigure `localectl set-keymap` in Debian.
 

@@ -1,4 +1,4 @@
-#type/HowTo #topic/gpu-pass-through-virt-manager #for/all 
+#type/HowTo #topic/Debian/Virt-Manager/Passthrough/GPU-Pass-Through #for/all 
 
 To pass a dedicated GPU through to a virtual machine (VFIO/PCI passthrough), you must isolate the GPU from Debian host so the `vfio-pci` driver can claim it at boot.
 

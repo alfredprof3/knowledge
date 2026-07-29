@@ -1,4 +1,4 @@
-#type/HowTo #topic/libvirt-kvm-qemu #for/all 
+#type/HowTo/Install #topic/QEMU-Virt-Manager/libvirt-kvm-qemu #for/all 
 
 To install QEMU using Virt Manager in a clean installation of Debian use the following commands.
 # 1. Verify Hardware Virtualization

@@ -1,4 +1,4 @@
-#type/HowTo #topic/clean-installation #for/all 
+#type/HowTo #topic/Debian/source-list #for/all 
 # Sources list
 ## Option 3
 [Source](https://gist.github.com/sephyran/4a2a9049758fed57c6d311fe620cf976)

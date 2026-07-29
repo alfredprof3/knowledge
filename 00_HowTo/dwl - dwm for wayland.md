@@ -1,4 +1,4 @@
-#type/HowTo #topic/wayland/dwl-dwm-wayland #for/all 
+#type/HowTo #topic/Debian/Wayland/dwl-dwm-wayland #for/all 
 
 I tested in a virtual machine (KVM, QEMU & Virt-Manager). I compiled from scratch and it works. Follow the step by step.
 
