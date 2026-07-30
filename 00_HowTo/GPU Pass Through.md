@@ -27,22 +27,25 @@ You must tell the Linux kernel to enable the IOMMU memory management unit.
 > 	```bash
 > 	sudo update-grub
 > 	```
-
 # 2. Identify GPU Hardware IDs
 You need the vendor and device IDs of your dedicated graphics card and its bundled audio controller.
-1. Run this command to list your GPU devices:
-   
-```bash
-lspci -nn | grep -i vga
-```
-_Look for your dedicated GPU. It will output something like: `01:00.0 VGA compatible controller [...]: NVIDIA Corporation [10de:2484]`_
-2. Run this command to find its matching audio controller (usually the next address):
-   
-```bash
-lspci -nn | grep -i audio
-```
-_Look for the audio entry on the same bus: `01:00.1 Audio device [...]: NVIDIA Corporation [10de:228b]`_
-3. Write down the ID numbers inside the brackets. In this example, they are `10de:2484` and `10de:228b`
+> [!steps]
+> 0. Run this command to list your GPU devices:
+> 	
+> 	```bash
+> 	lspci -nn | grep -i vga
+> 	```
+> 
+> 	_Look for your dedicated GPU. It will output something like: `01:00.0 VGA compatible controller [...]: NVIDIA Corporation [10de:2484]`_
+> 
+> 1. Run this command to find its matching audio controller (usually the next address):
+> 	```bash
+> 	lspci -nn | grep -i audio
+> 	```
+> 	
+> 	_Look for the audio entry on the same bus: `01:00.1 Audio device [...]: NVIDIA Corporation [10de:228b]`_
+> 
+> 2. Write down the ID numbers inside the brackets. In this example, they are `10de:2484` and `10de:228b`
 # 3. Isolate the GPU via VFIO
 Force Debian to bind these hardware IDs to the VFIO driver instead of your normal graphics driver.
 > [!steps]
