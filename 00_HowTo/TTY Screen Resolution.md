@@ -21,7 +21,6 @@ To set the screen resolution for a GUI-less TTY console in Debian 13 running und
 > 	```bash
 > 	sudo reboot -h now
 > 	```
-
 # Troubleshooting Virtual Display Drivers
 If the resolution does not change, your `virt-manager` video device settings might be overriding it.
 

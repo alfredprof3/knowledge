@@ -41,3 +41,4 @@
 | Construyendo una maquina enigma con GNU/Linux<br>                                   | https://www.youtube.com/watch?v=VXTfBMCpiSA      |
 | Crear La Maquina Virtual Perfecta Para Linux \| Respuesta a Zatiel<br>              | https://www.youtube.com/watch?v=GBh7qXWsUj4      |
 | Cuántas líneas de código tiene el kernel 7                                          | https://youtu.be/FEN-vBCoBM4?si=SWv7DaPTyPYaw5hf |
+| Secure Boot en Debian 13 con MOK                                                    | https://youtu.be/BOee3sx5pyY?si=EtSFmQisLvfEooYy |
