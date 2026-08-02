@@ -44,7 +44,7 @@ body {
   --timeline-dot-border-color:       var(--background-primary);
   --timeline-dot-border-size:        5px;
 
-  --timeline-card-margin:            24px;
+  --timeline-card-margin:            32px;
   --timeline-card-background-color:  var(--color-base-30);
   --timeline-card-padding-x:         16px;
   --timeline-card-padding-y:         12px;
@@ -175,7 +175,7 @@ body {
   border-top-left-radius:  var(--timeline-card-radius);
   border-top-right-radius: var(--timeline-card-radius);
   padding-top:             var(--timeline-card-padding-y);
-  margin-top:               -1.25em;
+  margin-top:               -1.5em;
 }
 
 /* Bottom of card — last element before next H1, or last child */

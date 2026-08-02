@@ -4,7 +4,7 @@ To configure the resolution for a monitor using `xrandr` (usually in a virtual-k
 > [!steps]
 > 1. Create the file
 > 	```bash
-> 	sudo nvim /etc/X11/xorg.conf.d/Virtual-1.conf
+> 	sudo nvim /etc/X11/xorg.conf.d/10-monitor.conf
 > 	```
 > 2. Add the syntax
 > 	```bash
