@@ -46,7 +46,7 @@ According to LastDragon video of how to [Install Debian 13 Trixie for Workstatio
 > 	```bash
 > 	sudo update-grub
 > 	```
-> 8. Be sure that the `grub.cfg` also has updated. Review for those lines where `@rootfs` → `@` Do a quick search with the next command.
+> 8. Be sure that `grub.cfg` is also updated in the path `/boot/grub/grub.cfg`. Search for those lines where `@rootfs` → `@` Do a quick search with the next command.
 > 	```vim
 > 	:/@
 > 	```
@@ -54,4 +54,33 @@ According to LastDragon video of how to [Install Debian 13 Trixie for Workstatio
 > 	```bash
 > 	sudo reboot -h now
 > 	```
+# Gnome for a low resources machine
+Source: [Debian 11 + Gnome en una maquina de bajos recursos](https://www.youtube.com/watch?v=aXgECPQYxL0)
 
+This configuration applies to a clean installation of Debian. If you want to keep resource usage to a minimum while still using a desktop environment (GNOME), run the following command.
+
+```bash
+sudo apt install gnome-session gnome-shell gnome-background gnome-applets gnome-control-center mutter gjs gnome-terminal
+```
+
+If you want another terminal emulator, replace `gnome-terminal` for `alacritty` or `kitty` you can install them via `sudo apt install`
+# DWM setup
+Source: [JustAGuyLinux](https://codeberg.org/justaguylinux)
+
+A script that helps you how to install i3w
+
+[dwm-setup](https://codeberg.org/justaguylinux/dwm-setup)
+<iframe src="https://codeberg.org/justaguylinux/dwm-setup" title="dwm-setup" width="100%" height="800px" scrolling="no" frameborder="no" allow="fullscreen"></iframe>
+# i3-wm by IT'S FOSS
+Source [The Ultimate Guide to i3 Customization in Linux](https://itsfoss.com/i3-customization/)
+
+How to customize i3 in Debian.
+
+<iframe src="https://itsfoss.com/i3-customization/" width="100%" height="800px" scrolling="no" frameborder="no" allow="fullscreen"></iframe>
+
+# Sway setup
+Source: [JustAGuyLinux](https://codeberg.org/justaguylinux)
+
+How to setup Sway in Debian.
+
+<iframe src="https://codeberg.org/justaguylinux/sway-setup" width="100%" height="800px" scrolling="no" frameborder="no" allow="fullscreen"></iframe>

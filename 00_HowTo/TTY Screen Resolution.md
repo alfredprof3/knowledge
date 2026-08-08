@@ -5,7 +5,7 @@ To set the screen resolution for a GUI-less TTY console in Debian 13 running und
 > [!steps]
 > 1. Open the configuration file with root privileges.   
 > 	```bash
-> 	sudo nano /etc/default/grub
+> 	sudo nvim /etc/default/grub
 > 	```
 > 2. Update the following lines to match **1920x1080**:
 > 	```bash

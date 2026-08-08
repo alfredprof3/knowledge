@@ -20,7 +20,7 @@ sudo apt update && sudo apt upgrade -y
 Run the following consolidated command to install the emulator, management daemons, network bridging structures and the graphical manager GUI.
 
 ```bash
-sudo apt install bridge-utils qemu-kvm qemu-system qemy-system-x86 qemu-utils libvirt-clients libvirt-daemon-system virtinst virt-manager
+sudo apt install bridge-utils qemu-kvm qemu-system qemu-system-x86 qemu-utils libvirt-clients libvirt-daemon-system virtinst virt-manager
 ```
 
 - `qemu-system-x86` & `qemu-utils` The core emulation engine and disk imaging utilities.
@@ -92,5 +92,5 @@ wget https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-13.6.0-amd
 
 - Downloads ISO using `curl`
 ```bash
-curl https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-13.6.0-amd64-netinst.iso
+curl -L -O https://mirror.umd.edu/zorin/18/Zorin-OS-18.1-Core-64-bit.iso
 ```
