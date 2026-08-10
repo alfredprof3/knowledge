@@ -57,3 +57,21 @@ sudo timeshift --delete --snapshot '2026-08-09_18-00-00'
 sudo timeshift --delete-all
 ```
 
+# Troubleshooting 1. Device: Not selected
+This error occurs because Timeshift does not know which storage device or partition to use for its operations. On a clean Debian installation without a GUI, Timeshift cannot automatically guess or prompt you for a target drive until you explicitly declare it in the configuration.
+
+You can fix this directly from you TTY by specifying your target backup device.
+## 1. Identify Your Target Partition
+First, you need to find the name of the partition where you want to store your snapshots (for example, `/dev/sda2` or `/dev/nvme0n1p2`). Run either of these commands to list your drives:
+```bash
+sudo timeshift --list-devices
+lsblk
+```
+## 2. Force Timeshift to Select the Device
+Once you know your target partition name, you must explicitly pass it to Timeshift using the `--snapshot-device` flag. Run the list command again while pointing directly to that device:
+```bash
+sudo timeshift --list --snapshot-device /dev/sdX1
+```
+_(Replace /dev/sdX1 with your actual partition name)._
+## 3. Permanently Save the Device to Settings
+To fix the error permanently so you don't have to type the device path every time, you need to update Timeshift's configuration file.
