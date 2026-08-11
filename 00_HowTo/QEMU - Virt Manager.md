@@ -20,7 +20,7 @@ sudo apt update && sudo apt upgrade -y
 Run the following consolidated command to install the emulator, management daemons, network bridging structures and the graphical manager GUI.
 
 ```bash
-sudo apt install bridge-utils qemu-kvm qemu-system qemu-system-x86 qemu-utils libvirt-clients libvirt-daemon-system virtinst virt-manager
+sudo apt install bridge-utils qemu-kvm qemu-system qemu-system-x86 qemu-utils libvirt-clients libvirt-daemon-system virtinst virt-manager ovmf
 ```
 
 - `qemu-system-x86` & `qemu-utils` The core emulation engine and disk imaging utilities.
