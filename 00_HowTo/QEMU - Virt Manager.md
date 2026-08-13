@@ -42,6 +42,10 @@ sudo systemctl start libvirtd
 To prevent networking issues or DHCP delivery errors inside your guest operating systems, activate the default NAT network and set it to autostart.
 
 ```bash
+sudo virsh net-list --all
+```
+
+```bash
 sudo virsh net-start default
 ```
 

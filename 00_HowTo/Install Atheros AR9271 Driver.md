@@ -1,5 +1,7 @@
 #type/HowTo #topic/alfa-aus036ach-rtl8812au #for/all 
 
+Driver: `ath9k_htc`
+
 In the past I used to install the driver using the `aircrack-ng` Github repository, but now days a message shows that _THESE DRIVERS IS DEPRECATED_
 They suggest to use https://github.com/lwfinger/rtw88
 # Installation Guide
