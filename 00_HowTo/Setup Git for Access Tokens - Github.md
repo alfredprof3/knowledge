@@ -108,7 +108,7 @@
 > 
 > Bash
 > 
-> ```
+> ```bash
 > git config --global --unset credential.helper
 > ```
 > 

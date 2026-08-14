@@ -72,7 +72,7 @@ To prevent your settings from disappearing on every reboot, you must hardcore th
 
 1. Open your network configuration file using a text editor:
 ```bash
-sudo nvim /etc7network/interfaces
+sudo nvim /etc/network/interfaces
 ```
    2. Locate your RTL8812AU wireless interface section (usually labeled `wlan0` or similar)
    3. Add the line `dns-nameservers 8.8.8.8 1.1.1.1` directly under your network settings. It should look like this:

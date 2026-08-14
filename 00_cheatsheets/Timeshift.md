@@ -75,3 +75,19 @@ sudo timeshift --list --snapshot-device /dev/sdX1
 _(Replace /dev/sdX1 with your actual partition name)._
 ## 3. Permanently Save the Device to Settings
 To fix the error permanently so you don't have to type the device path every time, you need to update Timeshift's configuration file.
+
+1. Open the configuration file using a text editor:
+   
+```bash
+sudo nvim /etc/timeshift/timeshift.json
+```
+2. Look for the line that says: `"backup_device_uuid" : ""`
+3. You need to replace the empty quotes with your partition's **UUID**.
+4. To find the UUID without leaving neovim, you can open a secondary TTY or run `sudo blkid` before editing. The line in your JSON file should look like this:
+   
+```json
+"backup_device_uuid" : "12345678-abcd-1234-abcd-123456789abc",
+```
+5. Save and exit `:x`
+
+Once the UUID is saved in the JSON file, running `sudo timeshit --list` will work perfectly without throwing the critical abstract collection error.
