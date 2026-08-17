@@ -101,4 +101,4 @@ or
 > Quote callout working with the CSS snippet
 # CSS Code
 
-![[Outlined Callout]]
+![[00_knowledge/00_CSS-Snippets/Outlined Callout]]
