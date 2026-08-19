@@ -70,19 +70,21 @@ echo -e "nameserver 8.8.8.8\nnameserver 1.1.1.1" | sudo tee /etc/resolv.conf
 ## 2. Make the DNS Settings Permanent (Recommended Fix)
 To prevent your settings from disappearing on every reboot, you must hardcore the DNS nameservers directly into the configuration file you used to set up the connection.
 
-1. Open your network configuration file using a text editor:
-```bash
-sudo nvim /etc/network/interfaces
-```
-   2. Locate your RTL8812AU wireless interface section (usually labeled `wlan0` or similar)
-   3. Add the line `dns-nameservers 8.8.8.8 1.1.1.1` directly under your network settings. It should look like this:
-```
-iface wlan0 inet dhcp
-	wpa-ssid "Your_WiFi_Name"
-	wpa-psk "Your_WiFi_Password"
-	dns-nameservers 8.8.8.8 1.1.1.1
-```
-4. Save the file by pressing `:x`
+> [!steps]
+> 1. Open your network configuration file using a text editor:
+> 	```bash
+> 	sudo nvim /etc/network/interfaces
+> 	```
+> 2. Locate your RTL8812AU wireless interface section (usually labeled `wlan0` or similar)
+> 3. Add the line `dns-nameservers 8.8.8.8 1.1.1.1` directly under your network settings. It should look like this:
+> 	```
+> 	iface wlan0 inet dhcp
+> 		wpa-ssid "Your_WiFi_Name"
+> 		wpa-psk "Your_WiFi_Password"
+> 		dns-nameservers 8.8.8.8 1.1.1.1
+> 	```
+> 4. Save the file by pressing `:x`
+
 ## 3. Apply the Changes Securely
 
 > [!steps]
@@ -158,18 +160,21 @@ Right now, you are likely defining your network directly in `/etc/network/inter
 > 	```
 
 From now on, whenever `wpa_supplicant` detects "Home_Network" or "Cafe_Network", it will connect automatically and ask the `default` configuration for a DHCP IP address.
+# How to Connect to a New WiFi
 ## The Game Changer: Using `wpa_cli`
 Because you added `update_config=1` to your configuration file, **you never have to manually edit a text file to add a new network again.**
 
 When you sit down at a new location with a headless setup, you can use the interactive `wpa_cli` tool to scan, connect, and save the network. Just type `sudo wpa_cli` to enter the interactive prompt, and follow this workflow:
 
-1. `scan` (Tells the adapter to look for networks)    
-2. `scan_results` (Prints a list of networks in the room)
+1. `scan` (Tells the adapter to look for networks).
+2. `scan_results` (Prints a list of networks in the room).
 3. `add_network` (This will output a new network ID number, e.g., `1` or `2`. Use this number for the next steps).
 4. `set_network 1 ssid "New_Location_WiFi"`
 5. `set_network 1 psk "their_password"`
-6. `enable_network 1` (The daemon will now attempt to connect)
-7. `save_config` (This permanently writes the new network to your `wpa_supplicant.conf` file!)
+6. `enable_network 1` (The daemon will now attempt to connect).
+7. `reconnect` (Only if it wasn't possible to connect to the WiFi, try it again).
+8. `status` (Just to be sure, display network information).
+9. `save_config` (This permanently writes the new network to your `wpa_supplicant.conf` file!).
 
 Type `quit` to exit. Your system will now automatically remember and connect to this location next time you visit.
 # How do I set up the same automatic connection process, but using any wireless network adapter?
