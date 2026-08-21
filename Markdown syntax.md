@@ -133,6 +133,10 @@ Water is H<sub>2</sub>O.
 > [!tip]- Preview: Subscript Text HTML tag
 > Water is H<sub>2</sub>O.
 
+# Superscript
+
+
+
 # Numbered List
 
 - To display a numbered list just type the number following by a dot.
@@ -492,7 +496,7 @@ let z = x + y;
 ```
 
 > [!tip]- Preview: Internal Wikilink to a Heading
-> [[Markdown syntax#Headings]]
+> [[Markdown Syntax#Headings]]
 
 - Link to a specific heading and change the link display text
 
@@ -501,28 +505,27 @@ let z = x + y;
 ```
 
 > [!tip]- Preview: Internal Wikilink with Custom Name
-> [[Markdown syntax#Headings|Markdown Syntax Heading]]
+> [[Markdown Syntax#Headings|Markdown Syntax Heading]]
 
 # Reference Links
 
 - You can reference links writing the below or at the bottom of the note.
 
 ```markdown
-Check out [this article][ref1] and [that guide][ref2].
+Check out [this article][1] and [that guide][2].
 
-[ref1]: https://obsidian.md/ "Obsidian"
-[ref2]: https://obsidian.md/help/ "Obsidian Help"
+[1]: https://obsidian.md/ "Obsidian"
+[2]: https://obsidian.md/help/ "Obsidian Help"
 ```
 
 > [!tip]- Preview: Reference Links
-> Check out [this article][ref1] and [that guide][ref2].
+> Check out [this article][1] and [that guide][2].
 > 
-> [ref1]: https://obsidian.md/ "Obsidian"
-> [ref2]: https://obsidian.md/help/ "Obsidian Help"
+> [1]: https://obsidian.md/ "Obsidian"
+> [2]: https://obsidian.md/help/ "Obsidian Help"
 
-# Images
-
-## Absolute path
+# Embed
+## Images
 
 - To embed images that comes from absolute path (URLs).
 
@@ -533,8 +536,6 @@ Check out [this article][ref1] and [that guide][ref2].
 > [!tip]- Preview: Image Embed by Absolute Path
 > ![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
 
-## Relative path
-
 - To embed images that comes from a relative path (Local).
 
 ```markdown
@@ -544,8 +545,6 @@ Check out [this article][ref1] and [that guide][ref2].
 > [!tip]- Preview: Image Embed by Relative Path
 > ![Image in Your Pictures Directory|640](file:///Users/alfredxuser/Downloads/image1.webp)
 > _⚠️ You need to replace the path to the image you want to embed `Users/UserName/Downloads/image1.webp`_
-
-## Alternative Names
 
 In both ways to embed an image you can add an alternative name for images.
 
@@ -558,8 +557,6 @@ In both ways to embed an image you can add an alternative name for images.
 > [!tip]- Preview: Image Embed with Alt Name
 > ![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png "Alt names goes here")
 
----
-
 ```markdown
 ![Image in Your Pictures Directory|640](file:///Users/alfredxuser/Downloads/image1.webp)
 ```
@@ -571,7 +568,7 @@ _📍 Place the cursor over the image to see a little pop up_
 
 ## Linked Images
 
-- Make an image clickable by wrapping it in a link.
+- Make an image clickable by wrapping it in a link (Absolute path)
 
 ```markdown
 [![Neon Cyberpunk. Photo by 土豆 地雷 from Pexels](https://images.pexels.com/photos/28122495/pexels-photo-28122495.jpeg)](https://www.pexels.com/photo/cyberpunk-2077-neon-lights-28122495/)
@@ -580,6 +577,8 @@ _📍 Place the cursor over the image to see a little pop up_
 > [!tip]- Preview: Linked Image
 > [![Neon Cyberpunk. Photo by 土豆 地雷 from Pexels](https://images.pexels.com/photos/28122495/pexels-photo-28122495.jpeg)](https://www.pexels.com/photo/cyberpunk-2077-neon-lights-28122495/)
 
+- Making an image clickable by wrapping it in a link (Relative path)
+
 ```markdown
 [![Image in Your Pictures Directory|640](file:///Users/alfredxuser/Downloads/image1.webp)](https://obsidian.md)
 ```
@@ -587,7 +586,72 @@ _📍 Place the cursor over the image to see a little pop up_
 > [!tip]- Preview: Linked Image
 > [![Image in Your Pictures Directory|640](file:///Users/alfredxuser/Downloads/image1.webp)](https://obsidian.md)
 
-# Embed
+# Blockquotes
+
+# Tables
+
+# Horizontal Rules
+
+# Line Breaks
+
+# Footnotes
+
+# HTML tags
+
+<details>
+<summary>Show details</summary>
+
+Hidden text that appears
+when you click the summary.
+
+</details>
+
+
+```markdown
+<!-- -->
+```
+# Mermaid Code Syntax
+
+````markdown
+```mermaid
+flowchart LR
+  Start --> Stop
+```
+````
+
+````markdown
+```mermaid
+flowchart LR
+A[Write] --> B[Preview]
+B --> C[Export]
+```
+````
+
+````markdown
+```mermaid
+graph LR
+    A[Start] --> B{Decision}
+    B -->|Yes| C[Action]
+    B -->|No| D[End]
+```
+````
+
+# Math LaTeX Code Syntax
+
+```latex
+$$
+a^2 + b^2 = c^2
+$$
+```
+
+# Inline Math LaTeX Code Syntax
+
+```latex
+Inline math: $E = mc^2$
+```
+
+
+
 
 
 
@@ -716,3 +780,12 @@ Example:
 > 
 > > note inside level 2
 > > Note inside level 3
+
+# Command-Line Markdown Viewer
+
+1. Glow
+2. Pandoc
+
+# References
+1. [Markdown Lang](https://www.markdownlang.com/basic/emphasis.html)
+2. [Markdown Syntax](https://markdown.org)

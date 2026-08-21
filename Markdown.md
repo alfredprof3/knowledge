@@ -1,20 +1,4 @@
-
-
-First Header | Second Header
------------- | -------------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
-
-:kissing_heart:
-
-Este es [Video]
-
-[Back to top](#Structured)
-
-[Video]:https://www.youtube.com/watch?v=1_zgKRBrT0Y
-
-
-### Video embedding
+# Video embedding
 
 Test for video embedding in markdown file but written with vimwiki
 
