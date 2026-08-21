@@ -107,3 +107,38 @@ If you'd like, let me know:
 - Whether your goal is minimizing compile times via **`localmodconfig`**.
 
 I can tailor specialized module optimization configurations exactly to your system environment!
+
+> [!info]- URL about Compiling Kernel
+> https://medium.com/@ThyCrow/compiling-the-linux-kernel-and-creating-a-bootable-iso-from-it-6afb8d23ba22
+> https://computingforgeeks.com/compile-linux-kernel-from-source/
+> https://www.linux.com/topic/desktop/how-compile-linux-kernel-0/
+> https://forwardevery.day/2024/04/04/steps-on-how-to-compile-linux-kernel/
+> https://itsfoss.com/compile-linux-kernel/
+> https://sysadminsage.com/how-to-compile-the-linux-kernel/
+> https://oneuptime.com/blog/post/2026-01-15-compile-custom-kernel-ubuntu/view
+> https://davidaugustat.com/linux/how-to-compile-linux-kernel-on-ubuntu
+> https://www.linuxfromscratch.org/lfs/view/development/chapter10/kernel.html
+> https://jakubwieloch.com/en/blog/2025/linux-kernel-kompilieren/
+> https://phoenixnap.com/kb/build-linux-kernel
+> https://stephenagrice.medium.com/how-to-compile-the-linux-kernel-from-source-531dd4cce627
+> https://www.thomas-krenn.com/en/wiki/Compiling_Linux_kernel_under_Ubuntu_or_Debian
+> https://jothiprasath.com/blog/linux-kernel-compile/https://www.instructables.com/How-to-Compile-the-Linux-Kernel/
+> https://hackerbikepacker.com/kernel-build-tricks
+> https://docs.kernel.org/process/changes.html
+> 
+> # Brave AI
+> 1. uname -r
+> 2. sudo apt install -y build-essential libncurses-dev bison flex libssl-dev libelf-dev libdw-dev bc dwarves zstd cpio kmod fakeroot git wget
+> 3. export KVER="7.1"
+> 4. wget "https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-${KVER}.tar.xz"
+> 5. tar -xfv "linux-${KVER}.tar.xz"
+> 6. cd linux-7.1/
+> 7. cp -v "/boot/config-$(uname -r)" .config
+> 8. yes '' | make localmodconfig
+> 9. scripts/config --disable SYSTEM_TRUSTED_KEYS
+> 10. scripts/config --disable SYSTEM_REVOCATION_KEYS
+> 11. scripts/config --disable MODULE_SIG
+> 12. scripts/config --disable DEBUG_INFO
+> 13. make olddeconfig
+> 14. make -j"$(nproc)"
+

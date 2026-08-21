@@ -650,42 +650,8 @@ $$
 Inline math: $E = mc^2$
 ```
 
+# Callouts
 
-
-
-
-
-
-First Header | Second Header
------------- | -------------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
-
-:kissing_heart:
-
-Este es [Video]
-
-[Back to top](#Structured)
-
-[Video]:https://www.youtube.com/watch?v=1_zgKRBrT0Y
-
-
-### Video embedding
-
-Test for video embedding in markdown file but written with vimwiki
-
-Link and embed video at same time
-```md
-[![Git and Github](https://img.youtube.com/vi/zZGEuFI9xMY/maxresdefault.jpg)](https://www.youtube.com/watch?v=zZGEuFI9xMY)
-```
-Example:
-[![Git and Github](https://img.youtube.com/vi/zZGEuFI9xMY/maxresdefault.jpg)](https://www.youtube.com/watch?v=zZGEuFI9xMY)
-
-<a href="https://www.youtube.com/embed/zZGEuFI9xMY" target="_blank"><img src="https://img.youtube.com/vi/zZGEuFI9xMY/maxresdefault.jpg" alt="Git and Github" width="400" border="10"></a>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/2ReR1YJrNOM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-## Types of callouts
 >[!note]- Note
 >``` 
 >>[!note] Note
@@ -716,9 +682,9 @@ Example:
 >>Text goes here
 >```
 
->[!check]- succes
+>[!check]- Check
 >``` 
->>[!check] succes
+>>[!check] Check
 >>Text goes here
 >```
 
@@ -763,6 +729,74 @@ Example:
 >>[!quote] Quote
 >>Text goes here
 >```
+
+# Git Difference Code
+
+```diff
+- const old = "remove this line";
++ const updated = "add this line";
+  const unchanged = "this stays";
+```
+
+# Basic Table
+
+```markdown
+| Header 1 | Header 2 | Header 3 |
+| -------- | -------- | -------- |
+| Cell 1   | Cell 2   | Cell 3   |
+| Cell 4   | Cell 5   | Cell 6   |
+```
+
+> [!tip]- Preview: Basic Table
+> 
+> | Header 1 | Header 2 | Header 3 |
+> | -------- | -------- | -------- |
+> | Cell 1   | Cell 2   | Cell 3   |
+> | Cell 4   | Cell 5   | Cell 6   |
+
+# Advanced Table (Left-align, Center-align, Right-align)
+
+- `:---` or `---` — left-aligned (default)
+- `:---:` — center-aligned
+- `---:` — right-aligned
+
+```markdown
+| Left-aligned | Center-aligned | Right-aligned |
+| :----------- | :------------: | ------------: |
+| Left         |     Center     |         Right |
+| text         |      text      |          text |
+```
+
+> [!tip]- Preview: Advanced Table
+> 
+> | Header 1 | Header 2 | Header 3 |
+> | :-------- | :--------: | --------: |
+> | Cell 1   | Cell 2   | Cell 3   |
+> | Cell 4   | Cell 5   | Cell 6   |
+
+
+
+
+
+
+
+
+# Video embedding
+
+Test for video embedding in markdown file but written with vimwiki
+
+Link and embed video at same time
+```md
+[![Git and Github](https://img.youtube.com/vi/zZGEuFI9xMY/maxresdefault.jpg)](https://www.youtube.com/watch?v=zZGEuFI9xMY)
+```
+Example:
+[![Git and Github](https://img.youtube.com/vi/zZGEuFI9xMY/maxresdefault.jpg)](https://www.youtube.com/watch?v=zZGEuFI9xMY)
+
+<a href="https://www.youtube.com/embed/zZGEuFI9xMY" target="_blank"><img src="https://img.youtube.com/vi/zZGEuFI9xMY/maxresdefault.jpg" alt="Git and Github" width="400" border="10"></a>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2ReR1YJrNOM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 
 >[!note] Note
 >This is a callout inside Obsidian app.
