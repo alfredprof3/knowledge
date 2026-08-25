@@ -598,6 +598,10 @@ _📍 Place the cursor over the image to see a little pop up_
 
 # HTML tags
 
+```html
+<kbd>Keyboard Tag</kbd>
+```
+
 <details>
 <summary>Show details</summary>
 
