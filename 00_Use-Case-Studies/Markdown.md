@@ -12,7 +12,7 @@ Source: [Markdown Lang](https://www.markdownlang.com/)
 - API documentation and code examples
 - Contribution guide and license agreement
 
-````
+````markdown
 # Project Name
 
 A brief project description
@@ -21,11 +21,12 @@ A brief project description
 
 ```bash
 npm install project-name
+```
 ````
 
 # Usage 
 
-```
+```javascript
 const project = require('project-name');
 project.init();
 ```
@@ -36,7 +37,7 @@ project.init();
 
 Initialize project configuration...
 
-````
+````markdown
 
 **API Documentation**
 - Interface and parameter descriptions
@@ -69,6 +70,7 @@ title: "My First Blog Post"
 date: 2023-01-01
 categories: [Tech, Markdown]
 ---
+```
 
 # Blog Content
 
@@ -77,7 +79,7 @@ Here is the main content of the blog...
 
 **Hugo**
 
-```
+```markdown
 ---
 title: "Quick Site Building Guide"
 date: 2023-01-01T10:00:00+08:00
@@ -92,7 +94,7 @@ With Hugo, you can quickly create static sites...
 
 **Hexo**
 
-```
+```markdown
 ---
 title: Tech Sharing
 date: 2023-01-01 10:00:00
@@ -118,7 +120,7 @@ Sharing some frontend development experience...
 
 **Academic Paper Draft**
 
-```
+```markdown
 # Paper Title
 
 ## Abstract
@@ -161,7 +163,7 @@ Let $X = \{x_1, x_2, ..., x_n\}$ be the input dataset...
 
 **Course Syllabus**
 
-```
+```markdown
 # Introduction to Computer Science
 
 ## Course Information
@@ -196,7 +198,7 @@ After completing this course, students should be able to:
 
 ## Requirements Document 
 
-```
+```markdown
 # Project Requirements Specification
 
 ## 1. Project Overview
@@ -236,7 +238,7 @@ The company needs a customer relationship management system...
 
 **Product Roadmap**
 
-```
+```markdown
 # Product Roadmap 2023
 
 ## Q1: Basic Features
@@ -262,7 +264,7 @@ The company needs a customer relationship management system...
 
 **Meeting Minutes**
 
-```
+```markdown
 # Weekly Meeting Minutes - 2023/01/15
 
 ## Attendees
@@ -294,7 +296,7 @@ The company needs a customer relationship management system...
 
 **Book Notes**
 
-```
+```markdown
 # "Code Complete" Book Notes
 
 ## Chapter 2: Using Metaphors to Better Understand Software Development
@@ -320,7 +322,7 @@ In actual work, I have found:
 
 **Work Log**
 
-```
+```markdown
 # Work Log - 2023/01/15
 
 ## Completed Today
@@ -345,7 +347,7 @@ Today I learned about Docker network configuration and found that...
 
 ## User Manual
 
-```
+```markdown
 # Software User Manual
 
 ## 1. Quick Start
@@ -381,7 +383,7 @@ After starting the software, the system will guide you through the initial confi
 
 ## Troubleshooting
 
-```
+```markdown
 # FAQ
 
 ## 1. Installation Issues
@@ -444,7 +446,7 @@ After starting the software, the system will guide you through the initial confi
 
 **Business Report**
 
-```
+```markdown
 # Monthly Business Analysis Report
 
 ## Key Metrics

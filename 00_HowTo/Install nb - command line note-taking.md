@@ -18,7 +18,7 @@
     - [MacDown](https://macdown.uranusjr.com/),
     - [some of these](https://github.com/topics/text-editor),
     - [and many of these.](https://en.wikipedia.org/wiki/List_of_text_editors)
-## Optional (but recommended)
+### Optional (but recommended)
 `nb` leverages standard command line tools and works in standard Linux / Unix environments. `nb`also checks the environment for some additional optional tools and uses them to enhance the experience whenever they are available.
 
 Recommended:
@@ -36,3 +36,19 @@ Also supported for various enhancements:
 ```
 brew install xwmx/taps/nb
 ```
+
+Installing nb with Homebrew also installs the recommended dependencies above and completion scripts for Bash, Zsh, and Fish.
+
+Install the latest development version from the repository with:
+
+```bash
+brew install xwmx/taps/nb --head
+```
+
+nb is also available in homebrew-core. Installing it together with the bash formula is recommended:
+
+```bash
+brew install nb bash
+```
+
+Ubuntu, Windows, and others
