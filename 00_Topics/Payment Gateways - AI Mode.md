@@ -200,3 +200,11 @@
 > Do you have a preference for any of these based on the commissions, or would you like to see a more detailed comparison of their current fees for 2026?
 
 ---
+
+
+
+| Name | Company | Rate |
+| ---- | ------- | ---- |
+|      |         |      |
+|      |         |      |
+|      |         |      |
