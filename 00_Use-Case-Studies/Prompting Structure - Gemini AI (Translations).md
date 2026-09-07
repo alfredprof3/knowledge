@@ -138,3 +138,67 @@ Si regresas a una conversación después de unas horas o días, la IA puede perd
 * **Caso:** Bloqueo de Estados (State Transition Bug).
   * **Problema:** Una tarea con estado "Check" (✓) bloqueaba la transición a estado "Cancel" (✗).
   * **Resolución:** Uso de un *Quick Fix* indicando explícitamente a la IA que los *overrides* de estado deben funcionar de manera bidireccional.
+
+# Manual de Interacción con IA: Prompting Avanzado (Vol. 3)
+
+## 1. Arquitecturas de Prompts (Nuevas Plantillas)
+
+### Troubleshooting Específico de Git (Contexto de Entorno)
+* **Ancla de Contexto:** Menciona qué acción de Git estabas probando.
+* **El Síntoma y Rastreo:** Pega el log de error exacto (ej. `fetch first` o `refspec does not match`).
+* **Contexto del Entorno (Crucial):** Detalla si usas GUI o terminal pura (*headless*), HTTPS o SSH, y el estado de tu repositorio remoto vs local.
+* **Comportamiento Esperado:** Pide que el error se maneje "con gracia" (*gracefully*) o se resuelva silenciosamente en segundo plano.
+* **Control de Salida:** Exige solo el *snippet* de código a reemplazar.
+
+### Multi-Environment Bug Report (Reporte de Error Multi-Entorno)
+* **Ancla de Estado:** Informa que la solución anterior causó un desajuste entre dos máquinas diferentes.
+* **Síntoma 1 (Sistema A):** Describe qué falla en el primer entorno (ej. macOS reporta éxito pero no hay archivos).
+* **Síntoma 2 (Sistema B):** Describe el choque en el segundo entorno (ej. Linux arroja error de *refspec*).
+* **Diagnóstico Arquitectónico:** Señala la mala práctica de la IA (ej. código *hardcodeado* que rompe la compatibilidad hacia atrás).
+* **El Nuevo Requerimiento:** Exige comportamiento dinámico (ej. autodetectar la rama en lugar de forzar un nombre fijo).
+* **Control de Salida:** Funciones dinámicas corregidas.
+
+---
+
+## 2. Glosario Técnico (Inglés a Español)
+
+* **Headless environment:** Un entorno de sistema operativo que no tiene interfaz gráfica de usuario (GUI), operado 100% por terminal (ej. servidores o contenedores).
+* **Credential Helper Abstraction:** Una capa de código inteligente que detecta y usa el gestor de contraseñas nativo del sistema (`osxkeychain`, `libsecret`), en lugar de depender de uno solo.
+* **Hardcoded (Código rígido):** Mala práctica de escribir valores fijos en el código (como la palabra `main` o `secret-tool`) impidiendo que el programa se adapte a otros escenarios.
+* **Platform lock-in:** Estar "atrapado" o limitado a que una herramienta funcione solo en un ecosistema específico (ej. forzar herramientas de GNOME en macOS).
+* **Suppressing stderr:** Ocultar los mensajes de error enviándolos a un "agujero negro" (usando `2>/dev/null`). Puede causar fallos silenciosos (*silent failures*).
+* **Branch Mismatch / Disjointed branch history:** Conflicto donde el repositorio local y el remoto tienen historiales desvinculados o nombres de rama principales diferentes (`master` vs `main`).
+* **Cross-environment state desynchronization:** Cuando los datos o historiales de dos máquinas (ej. tu Mac y tu Linux) pierden sincronía y entran en conflicto con el servidor central.
+* **Backward compatibility:** (Compatibilidad hacia atrás) Asegurar que el código nuevo no rompa repositorios o datos viejos ya existentes.
+
+---
+
+## 3. Casos de Estudio (Historial de Errores)
+
+* **Caso 1: El helper "Hardcodeado" y entornos Headless.**
+  * **Problema:** Fallo al conectar con Git en macOS. El script de credenciales dependía exclusivamente de `secret-tool` (GNOME).
+  * **Solución:** Arquitectura de *Credential Abstraction*. El script ahora autodetecta el SO y usa `osxkeychain` en Mac, `libsecret` en Linux, o `store` como respaldo universal.
+* **Caso 2: Fallo Silencioso por Supresión de Errores.**
+  * **Problema:** macOS mostraba "Sync complete" pero no descargaba notas. 
+  * **Diagnóstico:** El modo *Verbose* (`set -x`) reveló que el script ocultaba el error. Estaba descargando una rama `main` vacía porque macOS inicializaba en `master`.
+* **Caso 3: La trampa de forzar nombres de ramas (Main vs Master).**
+  * **Problema:** La IA intentó arreglar el Caso 2 forzando el comando `git branch -M main`. Esto arregló macOS, pero rompió la máquina Linux que ya tenía un historial en `master`.
+  * **Solución:** Reescribir el script para que detecte las ramas *dinámicamente*, acompañado de una migración manual estandarizada del repositorio de GitHub a `main`.
+
+---
+
+## 4. Snippets Útiles: Migración Manual de Master a Main
+
+Para estandarizar un repositorio viejo y evitar desincronización entre sistemas:
+
+**En la máquina principal:**
+1. `git branch -m master main` (Renombra localmente)
+2. `git push -u origin main` (Sube la nueva rama)
+3. Cambiar la rama por defecto en los *Settings* de GitHub.
+4. `git push origin --delete master` (Purga la rama vieja remota)
+
+**En las máquinas secundarias (para recuperar el hilo):**
+1. `git fetch origin`
+2. `git branch -m master main`
+3. `git branch -u origin/main main`
+4. `git remote set-head origin -a`
