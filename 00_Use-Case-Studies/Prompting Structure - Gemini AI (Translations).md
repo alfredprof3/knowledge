@@ -202,3 +202,52 @@ Para estandarizar un repositorio viejo y evitar desincronización entre sistemas
 2. `git branch -m master main`
 3. `git branch -u origin/main main`
 4. `git remote set-head origin -a`
+
+# Manual de Interacción con IA: Prompting Avanzado (Vol. 4)
+
+## 1. Arquitecturas de Prompts (Nuevas Plantillas)
+
+### Technical Documentation Generation (Generación de Documentación Técnica)
+Esta estructura obliga a la IA a asumir el rol de un Technical Writer y basarse estrictamente en tu código, evitando que invente comandos.
+* **Rol y Contexto:** "Actúa como un Technical Writer experto en proyectos Open Source y CLI."
+* **Descripción del Proyecto:** El "Elevator pitch". Qué es y cuál es su mayor diferenciador (ej. sincronización en background).
+* **Audiencia y Tono:** Para quién es (ej. desarrolladores) y el estilo (conciso, profesional, terminología estándar).
+* **Estructura Exigida:** Secciones obligatorias (Filosofía, Requisitos Previos, Instalación, Gestión de Credenciales, Referencia CLI, Troubleshooting).
+* **Inyección de Código (Static Analysis):** Pegar el código fuente completo para que la IA extraiga los comandos reales.
+* **Control de Salida:** Formato Markdown, uso de tablas e insignias (badges), cero texto introductorio o saludos.
+
+---
+
+## 2. Glosario Técnico y Conceptos (Inglés a Español)
+
+* **Context Switching:** La pérdida de concentración y tiempo que sufre un programador al tener que cambiar de aplicación (ej. salir de la terminal para abrir una app de notas).
+* **Frictionless UX:** Experiencia de usuario sin fricción. Una herramienta intuitiva que no requiere una larga curva de aprendizaje.
+* **Static Analysis:** Analizar el código fuente directamente para entender su comportamiento, en lugar de adivinarlo.
+* **Semantic Versioning (SemVer):** Estándar de la industria para nombrar versiones de software usando el formato `Mayor.Menor.Parche` (ej. `v1.0.0`).
+* **Boilerplate:** Código o texto estándar que se puede reutilizar en muchos lugares con poca o ninguna alteración (como el texto legal de una licencia).
+* **GitHub Flow:** Flujo de trabajo profesional donde la rama `main` es sagrada y siempre desplegable. Todo trabajo nuevo se hace en ramas secundarias (`feature branches`).
+
+---
+
+## 3. Estándares de la Industria (Workflows)
+
+### Conventional Commits
+Convención estricta para mensajes de Git que automatiza historiales y facilita la lectura:
+* `feat:` Nueva característica (ej. `feat: añadir opción SSH`).
+* `fix:` Solución de un error (ej. `fix: reparar fallo silencioso`).
+* `docs:` Cambios en documentación (ej. `docs: actualizar README`).
+* `refactor:` Mejora interna sin añadir funciones (ej. `refactor: consolidar comandos`).
+* `chore:` Mantenimiento o configuración (ej. `chore: add MIT license`).
+
+### Pasos para un Lanzamiento (Release) Inicial
+1. Preparar el código en la rama `main`.
+2. Crear un Tag local y subirlo: `git tag -a v1.0.0 -m "Release inicial"` -> `git push origin v1.0.0`.
+3. Crear el *Release* en la interfaz web de GitHub vinculado a ese Tag.
+
+### Estructura Ideal de un README para CLI
+1. **Badges (Insignias):** Requisitos técnicos de un vistazo (Bash, Licencia, SO).
+2. **Elevator Pitch:** Una cita breve (`>`) que resume la herramienta.
+3. **Features:** Viñetas con los diferenciadores principales.
+4. **Instalación:** Bloque de código copiable para una configuración en 30 segundos.
+5. **Uso (CLI Reference):** Tabla escaneable con los comandos disponibles.
+6. **Licencia:** Mención de protección legal (ej. MIT).
