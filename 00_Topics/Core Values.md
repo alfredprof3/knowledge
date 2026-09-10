@@ -1,6 +1,6 @@
 #type/Description #topic/Branding/Values #for/Marketing 
 
-[[Branding]] > [[What is Branding]]
+[[Branding]] > [[Branding]]
 
 Los valores fundamentales son los principios y creencias innegociables que determinan cómo opera tu empresa, cómo toma decisiones y cómo trata a las personas. 
 He aquí por qué son esenciales para los cimientos de tu marca:
